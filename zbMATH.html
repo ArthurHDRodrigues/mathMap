@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title>zbMATH - the first resource for mathematics</title>
+        <meta name="viewport" content="width=device-width, minimum-scale=0.1, maximum-scale=5.0">
+        <meta name="robots" content="index, follow">
+        <meta name="referrer" content="origin-when-cross-origin">
+        <link href="zbMATH_arquivos/bootstrap.css" rel="stylesheet" media="screen,print">
+        <link href="zbMATH_arquivos/bootstrap-theme.css" rel="stylesheet" media="screen,print">
+        <link href="zbMATH_arquivos/bootstrap-lightbox.css" rel="stylesheet" media="screen,print">
+        
+        <link href="zbMATH_arquivos/styles.css" rel="stylesheet" media="screen,print">
+        <link href="zbMATH_arquivos/zbmathjax.css" rel="stylesheet" media="screen,print">
+        <link rel="shortcut icon" href="https://zbmath.org/static/zbmath.ico">
+        <script type="application/ld+json">
+            {
+              "@context": "http://schema.org",
+              "@type": "Organization",
+              "url": "https://zbmath.org/",
+              "logo": "https://zbmath.org/static/zbMATH.png"
+            }
+        </script>
+    <style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1px; bottom: 2px; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style><style type="text/css">.mjx-chtml {display: inline-block; line-height: 0; text-indent: 0; text-align: left; text-transform: none; font-style: normal; font-weight: normal; font-size: 100%; font-size-adjust: none; letter-spacing: normal; word-wrap: normal; word-spacing: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0; min-height: 0; border: 0; margin: 0; padding: 1px 0}
+.MJXc-display {display: block; text-align: center; margin: 1em 0; padding: 0}
+.mjx-chtml[tabindex]:focus, body :focus .mjx-chtml[tabindex] {display: inline-table}
+.mjx-full-width {text-align: center; display: table-cell!important; width: 10000em}
+.mjx-math {display: inline-block; border-collapse: separate; border-spacing: 0}
+.mjx-math * {display: inline-block; -webkit-box-sizing: content-box!important; -moz-box-sizing: content-box!important; box-sizing: content-box!important; text-align: left}
+.mjx-numerator {display: block; text-align: center}
+.mjx-denominator {display: block; text-align: center}
+.MJXc-stacked {height: 0; position: relative}
+.MJXc-stacked > * {position: absolute}
+.MJXc-bevelled > * {display: inline-block}
+.mjx-stack {display: inline-block}
+.mjx-op {display: block}
+.mjx-under {display: table-cell}
+.mjx-over {display: block}
+.mjx-over > * {padding-left: 0px!important; padding-right: 0px!important}
+.mjx-under > * {padding-left: 0px!important; padding-right: 0px!important}
+.mjx-stack > .mjx-sup {display: block}
+.mjx-stack > .mjx-sub {display: block}
+.mjx-prestack > .mjx-presup {display: block}
+.mjx-prestack > .mjx-presub {display: block}
+.mjx-delim-h > .mjx-char {display: inline-block}
+.mjx-surd {vertical-align: top}
+.mjx-mphantom * {visibility: hidden}
+.mjx-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 2px 3px; font-style: normal; font-size: 90%}
+.mjx-annotation-xml {line-height: normal}
+.mjx-menclose > svg {fill: none; stroke: currentColor}
+.mjx-mtr {display: table-row}
+.mjx-mlabeledtr {display: table-row}
+.mjx-mtd {display: table-cell; text-align: center}
+.mjx-label {display: table-row}
+.mjx-box {display: inline-block}
+.mjx-block {display: block}
+.mjx-span {display: inline}
+.mjx-char {display: block; white-space: pre}
+.mjx-itable {display: inline-table; width: auto}
+.mjx-row {display: table-row}
+.mjx-cell {display: table-cell}
+.mjx-table {display: table; width: 100%}
+.mjx-line {display: block; height: 0}
+.mjx-strut {width: 0; padding-top: 1em}
+.mjx-vsize {width: 0}
+.MJXc-space1 {margin-left: .167em}
+.MJXc-space2 {margin-left: .222em}
+.MJXc-space3 {margin-left: .278em}
+.mjx-chartest {display: block; visibility: hidden; position: absolute; top: 0; line-height: normal; font-size: 500%}
+.mjx-chartest .mjx-char {display: inline}
+.mjx-chartest .mjx-box {padding-top: 1000px}
+.MJXc-processing {visibility: hidden; position: fixed; width: 0; height: 0; overflow: hidden}
+.MJXc-processed {display: none}
+.mjx-test {display: block; font-style: normal; font-weight: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow: hidden; height: 1px}
+.mjx-ex-box-test {position: absolute; width: 1px; height: 60ex}
+.mjx-line-box-test {display: table!important}
+.mjx-line-box-test span {display: table-cell!important; width: 10000em!important; min-width: 0; max-width: none; padding: 0; border: 0; margin: 0}
+#MathJax_CHTML_Tooltip {background-color: InfoBackground; color: InfoText; border: 1px solid black; box-shadow: 2px 2px 5px #AAAAAA; -webkit-box-shadow: 2px 2px 5px #AAAAAA; -moz-box-shadow: 2px 2px 5px #AAAAAA; -khtml-box-shadow: 2px 2px 5px #AAAAAA; padding: 3px 4px; z-index: 401; position: absolute; left: 0; top: 0; width: auto; height: auto; display: none}
+.mjx-chtml .mjx-noError {line-height: 1.2; vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+.MJXc-TeX-unknown-R {font-family: STIXGeneral,'Cambria Math','Arial Unicode MS',serif; font-style: normal; font-weight: normal}
+.MJXc-TeX-unknown-I {font-family: STIXGeneral,'Cambria Math','Arial Unicode MS',serif; font-style: italic; font-weight: normal}
+.MJXc-TeX-unknown-B {font-family: STIXGeneral,'Cambria Math','Arial Unicode MS',serif; font-style: normal; font-weight: bold}
+.MJXc-TeX-unknown-BI {font-family: STIXGeneral,'Cambria Math','Arial Unicode MS',serif; font-style: italic; font-weight: bold}
+.MJXc-TeX-ams-R {font-family: MJXc-TeX-ams-R,MJXc-TeX-ams-Rw}
+.MJXc-TeX-cal-B {font-family: MJXc-TeX-cal-B,MJXc-TeX-cal-Bx,MJXc-TeX-cal-Bw}
+.MJXc-TeX-frak-R {font-family: MJXc-TeX-frak-R,MJXc-TeX-frak-Rw}
+.MJXc-TeX-frak-B {font-family: MJXc-TeX-frak-B,MJXc-TeX-frak-Bx,MJXc-TeX-frak-Bw}
+.MJXc-TeX-math-BI {font-family: MJXc-TeX-math-BI,MJXc-TeX-math-BIx,MJXc-TeX-math-BIw}
+.MJXc-TeX-sans-R {font-family: MJXc-TeX-sans-R,MJXc-TeX-sans-Rw}
+.MJXc-TeX-sans-B {font-family: MJXc-TeX-sans-B,MJXc-TeX-sans-Bx,MJXc-TeX-sans-Bw}
+.MJXc-TeX-sans-I {font-family: MJXc-TeX-sans-I,MJXc-TeX-sans-Ix,MJXc-TeX-sans-Iw}
+.MJXc-TeX-script-R {font-family: MJXc-TeX-script-R,MJXc-TeX-script-Rw}
+.MJXc-TeX-type-R {font-family: MJXc-TeX-type-R,MJXc-TeX-type-Rw}
+.MJXc-TeX-cal-R {font-family: MJXc-TeX-cal-R,MJXc-TeX-cal-Rw}
+.MJXc-TeX-main-B {font-family: MJXc-TeX-main-B,MJXc-TeX-main-Bx,MJXc-TeX-main-Bw}
+.MJXc-TeX-main-I {font-family: MJXc-TeX-main-I,MJXc-TeX-main-Ix,MJXc-TeX-main-Iw}
+.MJXc-TeX-main-R {font-family: MJXc-TeX-main-R,MJXc-TeX-main-Rw}
+.MJXc-TeX-math-I {font-family: MJXc-TeX-math-I,MJXc-TeX-math-Ix,MJXc-TeX-math-Iw}
+.MJXc-TeX-size1-R {font-family: MJXc-TeX-size1-R,MJXc-TeX-size1-Rw}
+.MJXc-TeX-size2-R {font-family: MJXc-TeX-size2-R,MJXc-TeX-size2-Rw}
+.MJXc-TeX-size3-R {font-family: MJXc-TeX-size3-R,MJXc-TeX-size3-Rw}
+.MJXc-TeX-size4-R {font-family: MJXc-TeX-size4-R,MJXc-TeX-size4-Rw}
+@font-face {font-family: MJXc-TeX-ams-R; src: local('MathJax_AMS'), local('MathJax_AMS-Regular')}
+@font-face {font-family: MJXc-TeX-ams-Rw; src /*1*/: url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/eot/MathJax_AMS-Regular.eot'); src /*2*/: url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_AMS-Regular.woff') format('woff'), url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_AMS-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-cal-B; src: local('MathJax_Caligraphic Bold'), local('MathJax_Caligraphic-Bold')}
+@font-face {font-family: MJXc-TeX-cal-Bx; src: local('MathJax_Caligraphic'); font-weight: bold}
+@font-face {font-family: MJXc-TeX-cal-Bw; src /*1*/: url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/eot/MathJax_Caligraphic-Bold.eot'); src /*2*/: url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Caligraphic-Bold.woff') format('woff'), url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Caligraphic-Bold.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-frak-R; src: local('MathJax_Fraktur'), local('MathJax_Fraktur-Regular')}
+@font-face {font-family: MJXc-TeX-frak-Rw; src /*1*/: url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/eot/MathJax_Fraktur-Regular.eot'); src /*2*/: url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Fraktur-Regular.woff') format('woff'), url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Fraktur-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-frak-B; src: local('MathJax_Fraktur Bold'), local('MathJax_Fraktur-Bold')}
+@font-face {font-family: MJXc-TeX-frak-Bx; src: local('MathJax_Fraktur'); font-weight: bold}
+@font-face {font-family: MJXc-TeX-frak-Bw; src /*1*/: url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/eot/MathJax_Fraktur-Bold.eot'); src /*2*/: url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Fraktur-Bold.woff') format('woff'), url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Fraktur-Bold.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-math-BI; src: local('MathJax_Math BoldItalic'), local('MathJax_Math-BoldItalic')}
+@font-face {font-family: MJXc-TeX-math-BIx; src: local('MathJax_Math'); font-weight: bold; font-style: italic}
+@font-face {font-family: MJXc-TeX-math-BIw; src /*1*/: url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/eot/MathJax_Math-BoldItalic.eot'); src /*2*/: url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Math-BoldItalic.woff') format('woff'), url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Math-BoldItalic.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-sans-R; src: local('MathJax_SansSerif'), local('MathJax_SansSerif-Regular')}
+@font-face {font-family: MJXc-TeX-sans-Rw; src /*1*/: url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/eot/MathJax_SansSerif-Regular.eot'); src /*2*/: url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_SansSerif-Regular.woff') format('woff'), url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_SansSerif-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-sans-B; src: local('MathJax_SansSerif Bold'), local('MathJax_SansSerif-Bold')}
+@font-face {font-family: MJXc-TeX-sans-Bx; src: local('MathJax_SansSerif'); font-weight: bold}
+@font-face {font-family: MJXc-TeX-sans-Bw; src /*1*/: url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/eot/MathJax_SansSerif-Bold.eot'); src /*2*/: url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_SansSerif-Bold.woff') format('woff'), url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_SansSerif-Bold.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-sans-I; src: local('MathJax_SansSerif Italic'), local('MathJax_SansSerif-Italic')}
+@font-face {font-family: MJXc-TeX-sans-Ix; src: local('MathJax_SansSerif'); font-style: italic}
+@font-face {font-family: MJXc-TeX-sans-Iw; src /*1*/: url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/eot/MathJax_SansSerif-Italic.eot'); src /*2*/: url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_SansSerif-Italic.woff') format('woff'), url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_SansSerif-Italic.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-script-R; src: local('MathJax_Script'), local('MathJax_Script-Regular')}
+@font-face {font-family: MJXc-TeX-script-Rw; src /*1*/: url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/eot/MathJax_Script-Regular.eot'); src /*2*/: url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Script-Regular.woff') format('woff'), url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Script-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-type-R; src: local('MathJax_Typewriter'), local('MathJax_Typewriter-Regular')}
+@font-face {font-family: MJXc-TeX-type-Rw; src /*1*/: url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/eot/MathJax_Typewriter-Regular.eot'); src /*2*/: url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Typewriter-Regular.woff') format('woff'), url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Typewriter-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-cal-R; src: local('MathJax_Caligraphic'), local('MathJax_Caligraphic-Regular')}
+@font-face {font-family: MJXc-TeX-cal-Rw; src /*1*/: url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/eot/MathJax_Caligraphic-Regular.eot'); src /*2*/: url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Caligraphic-Regular.woff') format('woff'), url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Caligraphic-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-main-B; src: local('MathJax_Main Bold'), local('MathJax_Main-Bold')}
+@font-face {font-family: MJXc-TeX-main-Bx; src: local('MathJax_Main'); font-weight: bold}
+@font-face {font-family: MJXc-TeX-main-Bw; src /*1*/: url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/eot/MathJax_Main-Bold.eot'); src /*2*/: url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Main-Bold.woff') format('woff'), url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Main-Bold.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-main-I; src: local('MathJax_Main Italic'), local('MathJax_Main-Italic')}
+@font-face {font-family: MJXc-TeX-main-Ix; src: local('MathJax_Main'); font-style: italic}
+@font-face {font-family: MJXc-TeX-main-Iw; src /*1*/: url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/eot/MathJax_Main-Italic.eot'); src /*2*/: url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Main-Italic.woff') format('woff'), url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Main-Italic.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-main-R; src: local('MathJax_Main'), local('MathJax_Main-Regular')}
+@font-face {font-family: MJXc-TeX-main-Rw; src /*1*/: url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/eot/MathJax_Main-Regular.eot'); src /*2*/: url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff') format('woff'), url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Main-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-math-I; src: local('MathJax_Math Italic'), local('MathJax_Math-Italic')}
+@font-face {font-family: MJXc-TeX-math-Ix; src: local('MathJax_Math'); font-style: italic}
+@font-face {font-family: MJXc-TeX-math-Iw; src /*1*/: url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/eot/MathJax_Math-Italic.eot'); src /*2*/: url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Math-Italic.woff') format('woff'), url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Math-Italic.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-size1-R; src: local('MathJax_Size1'), local('MathJax_Size1-Regular')}
+@font-face {font-family: MJXc-TeX-size1-Rw; src /*1*/: url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/eot/MathJax_Size1-Regular.eot'); src /*2*/: url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Size1-Regular.woff') format('woff'), url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Size1-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-size2-R; src: local('MathJax_Size2'), local('MathJax_Size2-Regular')}
+@font-face {font-family: MJXc-TeX-size2-Rw; src /*1*/: url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/eot/MathJax_Size2-Regular.eot'); src /*2*/: url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Size2-Regular.woff') format('woff'), url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Size2-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-size3-R; src: local('MathJax_Size3'), local('MathJax_Size3-Regular')}
+@font-face {font-family: MJXc-TeX-size3-Rw; src /*1*/: url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/eot/MathJax_Size3-Regular.eot'); src /*2*/: url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Size3-Regular.woff') format('woff'), url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Size3-Regular.otf') format('opentype')}
+@font-face {font-family: MJXc-TeX-size4-R; src: local('MathJax_Size4'), local('MathJax_Size4-Regular')}
+@font-face {font-family: MJXc-TeX-size4-Rw; src /*1*/: url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/eot/MathJax_Size4-Regular.eot'); src /*2*/: url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Size4-Regular.woff') format('woff'), url('https://static.zbmath.org/contrib/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Size4-Regular.otf') format('opentype')}
+</style></head>
+
+    <body><div id="MathJax_Message" style="display: none;"></div>
+        <div id="line"></div>
+
+        <span id="clear" style="cursor: pointer; left: 1080px; top: 297.433px; display: none;" data-original-title="" title="" class="q">×</span>
+
+        <div id="page">
+            <h1>zbMATH <small>— the first resource for mathematics</small></h1>
+
+            <div id="head" class="start">
+                <nav id="menu" class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#zbnav" aria-expanded="false">
+                                <span class="sr-only" data-original-title="" title="">Toggle navigation</span>
+                                <span class="icon-bar" data-original-title="" title=""></span>
+                                <span class="icon-bar" data-original-title="" title=""></span>
+                                <span class="icon-bar" data-original-title="" title=""></span>
+                            </button>
+                            <a class="navbar-brand" href="#" data-original-title="" title="">
+                                <img class="logo" src="zbMATH_arquivos/zbmath.gif" alt="zbMATH">
+                            </a>
+                        </div>
+                        <div id="zbnav" class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav pages">
+                                <li class="about">
+                                    <a href="https://zbmath.org/about/" data-original-title="" title="">About</a>
+                                </li>
+                                <li class="frequently-asked-questions">
+                                    <a href="https://zbmath.org/frequently-asked-questions/" data-original-title="" title="">FAQ</a>
+                                </li>
+                                
+                                <li class="reviewer-service">
+                                    <a href="https://zbmath.org/reviewer-service/" target="_blank" data-original-title="" title="">Reviewer Service</a>
+                                </li>
+                                <li class="contact">
+                                    <a href="https://zbmath.org/contact/" data-original-title="" title="">Contact</a>
+                                </li>
+                                <li class="subscription">
+                                    <a href="https://zbmath.org/subscription/" data-original-title="" title="">Subscription</a>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right prefs">
+                                <li class="preferences dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" data-original-title="" title="">Preferences <i class="caret"></i></a>
+                                    <ul class="dropdown-menu preferences">
+                                        <li>
+                                            <form id="preferences" class="navbar-form" method="post" action="/preferences/">
+                                                <input type="hidden" name="path" value="/classification/?">
+                                                <span class="count" data-original-title="" title="">
+                                                    <label class="title">Default Hits per Page</label>
+                                                    <div class="form-group">
+                                                        <input id="count-10" type="radio" name="count" value="10">
+                                                        <label for="count-10" class="radio">10</label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input id="count-20" type="radio" name="count" value="20">
+                                                        <label for="count-20" class="radio">20</label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input id="count-50" type="radio" name="count" value="50">
+                                                        <label for="count-50" class="radio">50</label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input id="count-100" type="radio" name="count" value="100" checked="checked">
+                                                        <label for="count-100" class="radio">100 (default)</label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input id="count-200" type="radio" name="count" value="200">
+                                                        <label for="count-200" class="radio">200</label>
+                                                    </div>
+                                                </span>
+                                                <span class="format" data-original-title="" title="">
+                                                    <label class="title">Default Display Format</label>
+                                                    <div class="form-group">
+                                                        <input id="format-mathjax" type="radio" name="format" value="mathjax" checked="checked">
+                                                        <label for="format-mathjax" class="radio">MathJax (default)</label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input id="format-amstex" type="radio" name="format" value="latex">
+                                                        <label for="format-amstex" class="radio">LaTeX</label>
+                                                    </div>
+                                                </span>
+                                                <span class="ranking" data-original-title="" title="">
+                                                    <label class="title">Default Documents Sorting</label>
+                                                    <div class="form-group">
+                                                        <input id="ranking-default" type="radio" name="ranking" value="" checked="checked">
+                                                        <label for="ranking-default" class="radio">Newest first (default)</label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input id="ranking-reverse" type="radio" name="ranking" value="reverse">
+                                                        <label for="ranking-reverse" class="radio">Oldest first</label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input id="ranking-references" type="radio" name="ranking" value="references">
+                                                        <label for="ranking-references" class="radio">Reference citations</label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input id="ranking-citations" type="radio" name="ranking" value="citations">
+                                                        <label for="ranking-citations" class="radio">Review citations</label>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input id="ranking-volume" type="radio" name="ranking" value="volume">
+                                                        <label for="ranking-volume" class="radio">Zbl/JFM volume</label>
+                                                    </div>
+
+                                                </span>
+                                                <button type="submit" class="btn btn-default">OK</button>
+                                                <div class="clearfix">
+                                            
+                                        </div></form></li>
+                                    </ul>
+                                </li>
+                                
+                                    <li class="account dropdown">
+                                        <a title="" data-container="body" data-placement="left" data-trigger="hover" class="dropdown-toggle" data-toggle="dropdown" href="#" data-original-title="Click here to activate Remote Access to zbMATH">Remote <i class="caret"></i></a>
+                                        <ul class="dropdown-menu account">
+                                            <li>
+                                                <div>Access via <div class="account-name">USP  UNIVERSIDADE DE SAO PAULO</div></div>
+                                            </li>
+                                            <li>
+                                                <a class="blue" href="https://zbmath.org/remote_access/?path=%2Fclassification%2F%3F" data-original-title="" title="">Activate zbMATH Remote</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <!--<div class="clearfix"></div>-->
+                </nav>
+
+                <div id="tabs" class="start">
+                    <a class="logo" href="https://zbmath.org/" data-original-title="" title="">
+                        <img class="LOGO" src="zbMATH_arquivos/zbMATH.gif" alt="zbMATH">
+                    </a>
+                    <nav>
+                        <ul class="nav nav-tabs">
+                            <li class="documents">
+                                <a href="https://zbmath.org/" data-original-title="" title="">Documents</a>
+                            </li>
+                            <li class="authors">
+                                <a href="https://zbmath.org/authors/" data-original-title="" title="">Authors</a>
+                            </li>
+                            <li class="serials">
+                                <a href="https://zbmath.org/serials/" data-original-title="" title="">Serials</a>
+                            </li>
+                            <li class="classification active">
+                                <a href="https://zbmath.org/classification/" data-original-title="" title="">Classification</a>
+                            </li>
+                            
+                                <li class="software">
+                                    <a href="https://zbmath.org/software/" data-original-title="" title="">Software</a>
+                                </li>
+                                <li class="formulae">
+                                    <a href="https://zbmath.org/formulae/" data-original-title="" title="">Formulæ</a>
+                                </li>
+                            
+                        </ul>
+                    </nav>
+                    <div class="clearfix"></div>
+                </div>
+                
+    <div class="content-fixed">
+        <form class="form-inline" name="classification" method="get" action="/classification/">
+            <div class="content-formular">
+                <div class="classification one-line">
+                    <div id="search-row" class="input-group box">
+                        <span data-original-title="" title="">
+                            <div id="search-field">
+                                <input class="query form-control" type="text" name="q" placeholder="Search for classification" autocomplete="off">
+                            </div>
+                            <div class="search-buttons input-group-btn">
+                                <div class="btn-group">
+                                    <button class="btn btn-default search" type="submit"><span class="virtual" data-original-title="" title="">Search</span> <span class="glyphicon glyphicon-search" data-original-title="" title=""></span></button>
+                                </div>
+                            </div>
+                        </span>
+                        <span data-original-title="" title="">
+                            <div class="search-buttons input-group-btn">
+                                <div class="btn-group">
+                                    <div class="btn-group fields">
+                                        <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">Fields <i class="caret"></i></button>
+                                        <ul id="fields" class="dropdown-menu pull-right">
+                                            <li><a href="#" data-original-title="" title=""><span class="token item" data-original-title="" title="">any:</span><span data-original-title="" title="">&nbsp;</span>anywhere (default)</a></li>
+                                            <li><a href="#" data-original-title="" title=""><span class="token item" data-original-title="" title="">cc:</span><span data-original-title="" title="">&nbsp;&nbsp;</span>classification code</a></li>
+                                            <li><a href="#" data-original-title="" title=""><span class="token item" data-original-title="" title="">ct:</span><span data-original-title="" title="">&nbsp;&nbsp;</span>classification text</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-group operators">
+                                        <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">Operators <i class="caret"></i></button>
+                                        <ul id="operators" class="dropdown-menu pull-right">
+                                            <li><a href="#" data-original-title="" title=""><span class="token" data-original-title="" title="">a&nbsp;<span class="item" data-original-title="" title="">&amp;</span>&nbsp;b&nbsp;</span><span data-original-title="" title="">&nbsp;</span>logical and (default)</a></li>
+                                            <li><a href="#" data-original-title="" title=""><span class="token" data-original-title="" title="">a&nbsp;<span class="item" data-original-title="" title="">|</span>&nbsp;b&nbsp;</span><span data-original-title="" title="">&nbsp;</span>logical or</a></li>
+                                            <li><a href="#" data-original-title="" title=""><span class="token" data-original-title="" title=""><span class="item" data-original-title="" title="">!</span>ab&nbsp;&nbsp;&nbsp;</span><span data-original-title="" title="">&nbsp;</span>logical not</a></li>
+                                            <li><a href="#" data-original-title="" title=""><span class="token" data-original-title="" title="">abc<span class="item" data-original-title="" title="">*</span>&nbsp;&nbsp;</span><span data-original-title="" title="">&nbsp;</span>right wildcard</a></li>
+                                            <li><a href="#" data-original-title="" title=""><span class="token" data-original-title="" title=""><span class="item" data-original-title="" title="">"</span>ab&nbsp;c<span class="item" data-original-title="" title="">"</span></span><span data-original-title="" title="">&nbsp;</span>phrase</a></li>
+                                            <li><a href="#" data-original-title="" title=""><span class="token" data-original-title="" title=""><span class="item" data-original-title="" title="">(</span>ab&nbsp;c<span class="item" data-original-title="" title="">)</span></span><span data-original-title="" title="">&nbsp;</span>parentheses</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="special">
+                                <ul class="nav help">
+                                    <li class="dropdown pull-right">
+                                        <a data-toggle="dropdown" href="#" data-original-title="" title="">Help <i class="caret"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+                <div class="help"><h5>Examples</h5>
+<div id="help-terms">
+    <div class="help-item">
+        <span class="search-example" data-original-title="" title=""><a href="https://zbmath.org/classification/?q=Geometry" data-original-title="" title="">Geometry</a></span>
+        <span class="search-explanation" data-original-title="" title="">Search for the term <em>Geometry</em> in <strong>any</strong> field. Queries are <strong>case-independent</strong>.</span>
+    </div>
+</div>
+<div id="help-fields">
+  <h5>Fields</h5>
+  <table>
+    <tbody><tr>
+      <td class="nowrap padding"><strong>any</strong></td>
+      <td class="padding">anywhere</td>
+    </tr>
+    <tr>
+      <td class="nowrap padding"><strong>cc</strong></td>
+      <td class="padding">classification code</td>
+    </tr>
+    <tr>
+      <td class="nowrap padding"><strong>ct</strong></td>
+      <td class="padding">classification text</td>
+    </tr>
+  </tbody></table>
+</div>
+<div id="help-operators">
+  <h5>Operators</h5>
+  <table>
+    <tbody><tr>
+      <td class="nowrap padding">a <strong>&amp;</strong> b</td>
+      <td class="padding">logical and</td>
+      <td class="space"></td>
+      <td class="space"></td>
+      <td class="space"></td>
+      <td class="nowrap padding">abc<strong>*</strong></td>
+      <td class="padding">right wildcard</td>
+    </tr>
+    <tr>
+      <td class="nowrap padding">a <strong>|</strong> b</td>
+      <td class="padding">logical or</td>
+      <td class="space"></td>
+      <td class="space"></td>
+      <td class="space"></td>
+      <td class="nowrap padding"><strong>"</strong>ab c<strong>"</strong></td>
+      <td class="padding">phrase</td>
+    </tr>
+    <tr>
+      <td class="nowrap padding"><strong>!</strong>ab</td>
+      <td class="padding">logical not</td>
+      <td class="space"></td>
+      <td class="space"></td>
+      <td class="space"></td>
+      <td class="nowrap padding"><strong>(</strong>ab c<strong>)</strong></td>
+      <td class="padding">parentheses</td>
+    </tr>
+  </tbody></table>
+</div></div>
+            </div>
+        </form>
+    </div>
+
+            </div>
+
+            <div id="body" style="min-height: 440px;">
+                <div id="main" class="start">
+                    <div class="messages">
+                        
+                    </div>
+                    
+    <div id="classification">
+        <div class="content-main" style="padding-top: 0px;">
+            
+                
+
+<div class="head">
+    <h2>Mathematics Subject Classification – MSC2020</h2>
+</div>
+
+
+    <div class="left"><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A00" data-original-title="" title="">00</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A00" data-original-title="" title="">General and overarching topics; collections</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/00" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 00" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A01" data-original-title="" title="">01</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A01" data-original-title="" title="">History and biography</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/01" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 01" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A03" data-original-title="" title="">03</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A03" data-original-title="" title="">Mathematical logic and foundations</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/03" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 03" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A05" data-original-title="" title="">05</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A05" data-original-title="" title="">Combinatorics</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/05" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 05" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A06" data-original-title="" title="">06</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A06" data-original-title="" title="">Order, lattices, ordered algebraic structures</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/06" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 06" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A08" data-original-title="" title="">08</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A08" data-original-title="" title="">General algebraic systems</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/08" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 08" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A11" data-original-title="" title="">11</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A11" data-original-title="" title="">Number theory</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/11" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 11" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A12" data-original-title="" title="">12</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A12" data-original-title="" title="">Field theory and polynomials</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/12" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 12" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A13" data-original-title="" title="">13</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A13" data-original-title="" title="">Commutative algebra</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/13" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 13" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A14" data-original-title="" title="">14</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A14" data-original-title="" title="">Algebraic geometry</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/14" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 14" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A15" data-original-title="" title="">15</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A15" data-original-title="" title="">Linear and multilinear algebra; matrix theory</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/15" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 15" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A16" data-original-title="" title="">16</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A16" data-original-title="" title="">Associative rings and algebras</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/16" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 16" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A17" data-original-title="" title="">17</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A17" data-original-title="" title="">Nonassociative rings and algebras</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/17" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 17" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A18" data-original-title="" title="">18</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A18" data-original-title="" title="">Category theory; homological algebra</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/18" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 18" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A19" data-original-title="" title="">19</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A19" data-original-title="" title=""><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-1-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" style="font-size: 120%; position: relative;" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;K&lt;/mi&gt;&lt;/math&gt;" role="presentation"><span id="MJXc-Node-1" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-2" class="mjx-mrow"><span id="MJXc-Node-3" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.447em; padding-bottom: 0.281em; padding-right: 0.04em;">K</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>K</mi></math></span></span><script type="math/tex" id="MathJax-Element-1">K</script>-theory</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/19" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 19" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A20" data-original-title="" title="">20</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A20" data-original-title="" title="">Group theory and generalizations</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/20" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 20" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A22" data-original-title="" title="">22</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A22" data-original-title="" title="">Topological groups, Lie groups</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/22" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 22" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A26" data-original-title="" title="">26</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A26" data-original-title="" title="">Real functions</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/26" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 26" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A28" data-original-title="" title="">28</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A28" data-original-title="" title="">Measure and integration</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/28" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 28" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A30" data-original-title="" title="">30</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A30" data-original-title="" title="">Functions of a complex variable</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/30" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 30" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A31" data-original-title="" title="">31</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A31" data-original-title="" title="">Potential theory</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/31" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 31" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A32" data-original-title="" title="">32</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A32" data-original-title="" title="">Several complex variables and analytic spaces</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/32" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 32" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A33" data-original-title="" title="">33</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A33" data-original-title="" title="">Special functions</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/33" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 33" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div></div>
+
+
+    <div class="center"><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A34" data-original-title="" title="">34</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A34" data-original-title="" title="">Ordinary differential equations</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/34" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 34" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A35" data-original-title="" title="">35</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A35" data-original-title="" title="">Partial differential equations</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/35" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 35" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A37" data-original-title="" title="">37</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A37" data-original-title="" title="">Dynamical systems and ergodic theory</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/37" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 37" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A39" data-original-title="" title="">39</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A39" data-original-title="" title="">Difference and functional equations</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/39" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 39" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A40" data-original-title="" title="">40</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A40" data-original-title="" title="">Sequences, series, summability</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/40" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 40" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A41" data-original-title="" title="">41</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A41" data-original-title="" title="">Approximations and expansions</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/41" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 41" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A42" data-original-title="" title="">42</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A42" data-original-title="" title="">Harmonic analysis on Euclidean spaces</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/42" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 42" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A43" data-original-title="" title="">43</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A43" data-original-title="" title="">Abstract harmonic analysis</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/43" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 43" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A44" data-original-title="" title="">44</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A44" data-original-title="" title="">Integral transforms, operational calculus</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/44" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 44" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A45" data-original-title="" title="">45</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A45" data-original-title="" title="">Integral equations</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/45" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 45" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A46" data-original-title="" title="">46</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A46" data-original-title="" title="">Functional analysis</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/46" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 46" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A47" data-original-title="" title="">47</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A47" data-original-title="" title="">Operator theory</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/47" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 47" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A49" data-original-title="" title="">49</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A49" data-original-title="" title="">Calculus of variations and optimal control; optimization</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/49" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 49" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A51" data-original-title="" title="">51</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A51" data-original-title="" title="">Geometry</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/51" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 51" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A52" data-original-title="" title="">52</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A52" data-original-title="" title="">Convex and discrete geometry</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/52" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 52" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A53" data-original-title="" title="">53</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A53" data-original-title="" title="">Differential geometry</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/53" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 53" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A54" data-original-title="" title="">54</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A54" data-original-title="" title="">General topology</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/54" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 54" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A55" data-original-title="" title="">55</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A55" data-original-title="" title="">Algebraic topology</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/55" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 55" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A57" data-original-title="" title="">57</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A57" data-original-title="" title="">Manifolds and cell complexes</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/57" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 57" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A58" data-original-title="" title="">58</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A58" data-original-title="" title="">Global analysis, analysis on manifolds</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/58" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 58" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A60" data-original-title="" title="">60</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A60" data-original-title="" title="">Probability theory and stochastic processes</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/60" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 60" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div></div>
+
+
+    <div class="right"><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A62" data-original-title="" title="">62</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A62" data-original-title="" title="">Statistics</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/62" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 62" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A65" data-original-title="" title="">65</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A65" data-original-title="" title="">Numerical analysis</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/65" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 65" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A68" data-original-title="" title="">68</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A68" data-original-title="" title="">Computer science</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/68" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 68" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A70" data-original-title="" title="">70</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A70" data-original-title="" title="">Mechanics of particles and systems</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/70" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 70" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A74" data-original-title="" title="">74</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A74" data-original-title="" title="">Mechanics of deformable solids</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/74" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 74" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A76" data-original-title="" title="">76</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A76" data-original-title="" title="">Fluid mechanics</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/76" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 76" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A78" data-original-title="" title="">78</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A78" data-original-title="" title="">Optics, electromagnetic theory</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/78" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 78" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A80" data-original-title="" title="">80</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A80" data-original-title="" title="">Classical thermodynamics, heat transfer</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/80" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 80" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A81" data-original-title="" title="">81</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A81" data-original-title="" title="">Quantum theory</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/81" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 81" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A82" data-original-title="" title="">82</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A82" data-original-title="" title="">Statistical mechanics, structure of matter</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/82" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 82" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A83" data-original-title="" title="">83</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A83" data-original-title="" title="">Relativity and gravitational theory</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/83" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 83" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A85" data-original-title="" title="">85</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A85" data-original-title="" title="">Astronomy and astrophysics</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/85" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 85" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A86" data-original-title="" title="">86</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A86" data-original-title="" title="">Geophysics</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/86" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 86" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A90" data-original-title="" title="">90</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A90" data-original-title="" title="">Operations research, mathematical programming</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/90" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 90" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A91" data-original-title="" title="">91</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A91" data-original-title="" title="">Game theory, economics, finance, and other social and behavioral sciences</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/91" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 91" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A92" data-original-title="" title="">92</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A92" data-original-title="" title="">Biology and other natural sciences</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/92" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 92" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A93" data-original-title="" title="">93</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A93" data-original-title="" title="">Systems theory; control</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/93" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 93" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A94" data-original-title="" title="">94</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A94" data-original-title="" title="">Information and communication theory, circuits</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/94" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 94" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div><div class="item">
+                    <article>
+                        <div class="code">
+                            <a class="mono" href="https://zbmath.org/classification/?q=cc%3A97" data-original-title="" title="">97</a>
+                        </div>
+                        <div class="half">
+                            <a href="https://zbmath.org/classification/?q=cc%3A97" data-original-title="" title="">Mathematics education</a>&nbsp;<a target="_blank" href="https://zbmath.org/atom/cc/97" data-original-title="" title=""><img class="feed-icon" alt="Recent zbMATH articles in MSC 97" src="zbMATH_arquivos/feed-icon-12x12.png"></a></div>
+                    </article>
+                </div></div>
+
+
+<div class="clearfix"></div>
+            
+        </div>
+    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+            <div id="foot"><div class="logos">
+                        <a class="logo" href="https://www.fiz-karlsruhe.de/" target="fiz" data-original-title="" title="">
+                            <img class="fiz" src="zbMATH_arquivos/fiz.gif" alt="FIZ Karlsruhe GmbH">
+                        </a>
+                        <a class="logo" href="http://www.euro-math-soc.eu/" target="ems" data-original-title="" title="">
+                            <img class="ems" src="zbMATH_arquivos/ems.gif" alt="The European Mathematical Society">
+                        </a>
+                        <a class="logo" href="http://www.haw.uni-heidelberg.de/" target="haw" data-original-title="" title="">
+                            <img class="haw" src="zbMATH_arquivos/haw.gif" alt="Heidelberg Academy of Sciences and Humanities">
+                        </a>
+                    </div>
+                    <div class="clearfix"></div><div class="copyright">
+                    <div class="info">
+                        <ul class="nav">
+                            <li class="twitter">
+                                <a href="https://twitter.com/zbMATH" target="_blank" data-original-title="" title="">
+                                    <img src="zbMATH_arquivos/twitter.png" title="zbMATH at Twitter">
+                                </a>
+                            </li>
+                            <li class="w3c">
+                                <a href="http://validator.w3.org/check?uri=https%3A//zbmath.org/classification/" target="w3c" data-original-title="" title="">
+                                    <span class="glyphicon glyphicon-globe" data-original-title="" title=""></span> W3C
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    © 2020 <a target="fiz" href="https://www.fiz-karlsruhe.de/" data-original-title="" title="">FIZ Karlsruhe GmbH</a>
+                    <a href="https://zbmath.org/privacy-policy/" data-original-title="" title="">Privacy Policy</a>
+                    <a href="https://zbmath.org/legal-notices/" data-original-title="" title="">Legal Notices</a>
+                    <a href="https://zbmath.org/terms-conditions/" data-original-title="" title="">Terms &amp; Conditions</a>
+                </div>
+                <div class="clearfix" style="height: 0px;"></div>
+            </div>
+        </div>
+
+        <script src="zbMATH_arquivos/jquery.js"></script>
+        <script src="zbMATH_arquivos/jquery-migrate.js"></script>
+        <script src="zbMATH_arquivos/jquery_002.js"></script>
+        <script src="zbMATH_arquivos/bootstrap.js"></script>
+        <script src="zbMATH_arquivos/bootstrap-lightbox.js"></script>
+        <script src="zbMATH_arquivos/retina.js"></script>
+        
+        <script>
+            var SCRIPT_ROOT = "";
+        </script>
+        <script src="zbMATH_arquivos/scripts.js">
+        </script>
+
+        <script src="zbMATH_arquivos/MathJax.js"></script>
+            <script type="text/x-mathjax-config;executed=true">
+                MathJax.Hub.Config({
+                    "HTML-CSS": {
+                        preferredFont: "TeX",
+                        availableFonts: [ "STIX", "TeX" ],
+                        linebreaks: { automatic: true },
+                        EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+                    },
+                    tex2jax: {
+                        processEscapes: true,
+                        ignoreClass: "tex2jax_ignore|dno"
+                    },
+                    TeX: {
+                        Macros: {
+                            Aut: "\\operatorname{Aut}",
+                            Hom: "\\operatorname{Hom}"
+                        },
+                        noUndefined: {
+                            attributes: {
+                                mathcolor: "#039", //"red",
+                                mathbackground: "white", //"#FFEEEE",
+                                mathsize: "90%"
+                            }
+                        }
+                    },
+                    messageStyle: "none"
+                });
+            </script>
+        
+            <script type="text/javascript">
+                    $(document).ready(function() {
+                        $("#MathInput").stop(true, true).keyup(function() {
+                            $.ajax({
+                                url: "/mwsq/",
+                                type: "POST",
+                                data: { query : $("#MathInput").val() },
+                                dataType: "text"
+                            })
+                            .done(function(xml) {
+                                $("#MathPreview").html(xml);
+                                $(window).resize();
+                            });
+                        });
+                        var press = jQuery.Event("keyup");
+                        press.ctrlKey = false;
+                        press.which = 40;
+                        $("#MathInput").trigger(press);
+                    });
+                </script>
+            
+            
+    <div id="cookie">
+        <span data-original-title="" title="">×</span>
+        This website uses cookies for the purposes of authentication and
+ preference information. By continuing to use the website, you agree to 
+this. If you would like to learn more about cookies, please click on the
+ <a href="https://zbmath.org/privacy-policy/" data-original-title="" title="">Privacy Policy</a>.
+    </div>
+
+        
+<a href="#" id="to-top" style="display: inline;"><span id="to-top-hover"></span>to top</a></body></html>
