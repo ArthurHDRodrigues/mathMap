@@ -1,9 +1,15 @@
 from bs4 import BeautifulSoup
-import requests
+import requests, re
 from classes import *
 
 
 def main():
+	node = baixarArvore()
+
+	salveNode(node, "test")
+
+
+def baixarArvore():
 	name = input("nome do file:")
 	if name == "":
 		name = "zbMATH.html"
@@ -48,15 +54,15 @@ def main():
 			ramo = foo(nome, link.get('href'))
 			math.addChild(ramo)
 			print(nome,": ok")
-	print(math)
+	return math
 
 def foo(nome, link):
 	'''
 	string, string -> Node
-	recebe o nome de uma da matematica e um link para ela e devolve o Node dela junto aos Nodes das subareas
+	recebe o nome de uma área da matematica e um link para ela e devolve o Node dela junto aos Nodes das subareas
 	'''
 	r = Node(nome)
-	page = requests.get(link, timeout=1)
+	page = requests.get(link, timeout=50)
 	soup = BeautifulSoup(page.text, 'html.parser')
 	subsoup = soup.find(id="classification")
 
@@ -72,9 +78,37 @@ def foo(nome, link):
 
 		elif div.get("class") == ['item', 'level2']:
 			lista_de_a = div.find_all('a')
-			fil = Node(lista_de_a[1].text)
-			layer_1.addChild(fil)
+			nome = lista_de_a[1].text
+
+			if nome != "None of the above, but in this section":
+				fil = Node(nome)
+				layer_1.addChild(fil)
 	return r
+
+
+def salveNode(node, filename):
+	'''
+	Node, string -> None
+	'''
+	fl = filename + ".txt"
+	f = open(fl, "wt")
+
+	f.write(node.store())
+	f.close()
+
+def loadNode(filename):
+	'''
+	string -> Node
+	'''
+	fl = filename + ".txt"
+	f = open(fl, "wt")
+
+	f.read(node.store()) 
+	f.close()
+	return 0
+
+
+def treatName():
+	return re.sub('\[[^\]]+\]', '', s)
+
 main()
-#bla = "https://zbmath.org/classification/?q=cc%3A00"
-#foo("bla",bla)

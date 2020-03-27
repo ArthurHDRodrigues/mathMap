@@ -15,3 +15,13 @@ class Node:
 
     def addChild(self, newchild):
         self.child.append(newchild)
+
+
+    def updateName(self, newname):
+        self.name = newname
+
+    def store(self,spacer="+"):
+        r = self.name
+        for i in self.child:
+            r+="\n"+spacer+i.store(spacer+='+')
+        return r
