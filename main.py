@@ -1,13 +1,12 @@
 from bs4 import BeautifulSoup
 import requests, re
 from classes import *
-
+import svgwrite
 
 def main():
-	node = baixarArvore()
-
-	salveNode(node, "test")
-
+	#node = baixarArvore()
+	#salveNode(node, "test")
+	print("ok")
 
 def baixarArvore():
 	name = input("nome do file:")
@@ -103,7 +102,7 @@ def loadNode(filename):
 	fl = filename + ".txt"
 	f = open(fl, "wt")
 
-	f.read(node.store()) 
+	f.read(node.store())
 	f.close()
 	return 0
 
@@ -111,4 +110,38 @@ def loadNode(filename):
 def treatName():
 	return re.sub('\[[^\]]+\]', '', s)
 
-main()
+def exportSVG(node=None):
+	'''
+	Node -> None
+
+	recebe uma árvore e gera um arquivo svg
+	'''
+	dwg = svgwrite.Drawing('test.svg',(100,100), profile='tiny')
+	#dwg.add(dwg.line((0, 0), (100, 0), stroke=svgwrite.rgb(10, 10, 16, '%')))
+
+	'''dwg.add(dwg.text(node.name, insert=(1, 10), fill='black'))
+	for i in range(len(node.child)):
+		y = 1
+		dwg.add(dwg.text(node.child[i].name, insert=(5, (i+2)*10), fill='black'))'''
+
+	drawRecursive(dwg,node,(5,10))
+	dwg.save()
+
+def drawRecursive(dwg, node, xy):
+	dwg.add(dwg.text(node.name, insert=xy, fill='black'))
+	x,y = xy
+	dwg.add(svgwrite.shapes.Rect(insert=(x-3,y-11),size=(6*len(node.name),14),fill="none", stroke="black"))
+
+	for i in range(len(node.child)):
+		y+=16*node.child[i].countProli()
+		drawRecursive(dwg, node.child[i], (x+5,y))
+
+node = Node("raiz")
+filho1 = Node("filho1")
+filho2 = Node("filho2")
+filho1.addChild(Node("Neto"))
+filho2.addChild(Node("felipe"))
+
+node.addChild(filho1)
+node.addChild(filho2)
+exportSVG(node)

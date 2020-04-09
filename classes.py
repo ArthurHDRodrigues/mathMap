@@ -23,5 +23,16 @@ class Node:
     def store(self,spacer="+"):
         r = self.name
         for i in self.child:
-            r+="\n"+spacer+i.store(spacer+='+')
+            r+="\n"+spacer+i.store(spacer+'+')
+        return r
+
+    def countProli(self):
+        '''
+        Node -> int
+
+        devolve o número de vértices da árvore
+        '''
+        r = 1
+        for c in self.child:
+            r += c.countProli()
         return r
