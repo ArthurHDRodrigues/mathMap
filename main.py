@@ -4,8 +4,8 @@ from classes import *
 import svgwrite
 
 def main():
-	#node = baixarArvore()
-	#salveNode(node, "test")
+	node = baixarArvore()
+	salveNode(node, "test")
 	print("ok")
 
 def baixarArvore():
@@ -58,7 +58,8 @@ def baixarArvore():
 def foo(nome, link):
 	'''
 	string, string -> Node
-	recebe o nome de uma área da matematica e um link para ela e devolve o Node dela junto aos Nodes das subareas
+	recebe o nome de uma área da matematica e um link para ela e devolve o
+	Node dela junto aos Nodes das subareas
 	'''
 	r = Node(nome)
 	page = requests.get(link, timeout=50)
@@ -95,16 +96,51 @@ def salveNode(node, filename):
 	f.write(node.store())
 	f.close()
 
-def loadNode(filename):
+def countPlus(word):
+	'''
+	string -> int
+	recebe uma string e revolve o n° de '+' no inicio dela
+	'''
+	n=0
+	for i in word:
+		if i =='+':
+			n+=1
+		else:
+			break
+	return n
+
+def loadNode(file):
 	'''
 	string -> Node
 	'''
-	fl = filename + ".txt"
-	f = open(fl, "wt")
+	print("============")
+	if isinstance(file, str):
+		fl = file + ".txt"
+		temp = open(fl, "rt")
+		f = temp.readlines()
+		temp.close()
+	else:
+		f = file
 
-	f.read(node.store())
-	f.close()
-	return 0
+
+	tamanho = len(f)
+	current = f.pop(0)
+	node = Node(current)
+	n = countPlus(current)
+
+	if f != []:
+		m = countPlus(f[0])
+		while n+1 == m:
+			print("current: ", current)
+			print(f[0])
+			print(f)
+			node.addChild(loadNode(f))
+			if f != []:
+				m = countPlus(f[0])
+			else:
+				break
+
+	return node
 
 
 def treatName():
@@ -116,7 +152,9 @@ def exportSVG(node=None):
 
 	recebe uma árvore e gera um arquivo svg
 	'''
-	dwg = svgwrite.Drawing('test.svg',(100,100), profile='tiny')
+	W = 1000
+	H = 1000
+	dwg = svgwrite.Drawing('test.svg',(W,H), profile='tiny')
 	#dwg.add(dwg.line((0, 0), (100, 0), stroke=svgwrite.rgb(10, 10, 16, '%')))
 
 	'''dwg.add(dwg.text(node.name, insert=(1, 10), fill='black'))
@@ -124,24 +162,34 @@ def exportSVG(node=None):
 		y = 1
 		dwg.add(dwg.text(node.child[i].name, insert=(5, (i+2)*10), fill='black'))'''
 
+	dwg.add(dwg.rect(insert=(0, 0), size=(W,H),fill='white'))
 	drawRecursive(dwg,node,(5,10))
 	dwg.save()
 
 def drawRecursive(dwg, node, xy):
 	dwg.add(dwg.text(node.name, insert=xy, fill='black'))
 	x,y = xy
-	dwg.add(svgwrite.shapes.Rect(insert=(x-3,y-11),size=(6*len(node.name),14),fill="none", stroke="black"))
+	u = sum(1 for c in node.name if c.isupper())
+	n = len(node.name)
+	dwg.add(svgwrite.shapes.Rect(insert=(x-3,y-11),size=(10*u+5*(n-u),14),fill="none", stroke="black"))
 
 	for i in range(len(node.child)):
 		y+=16*node.child[i].countProli()
 		drawRecursive(dwg, node.child[i], (x+5,y))
 
-node = Node("raiz")
+'''node = Node("raiz")#loadNode("test")
 filho1 = Node("filho1")
 filho2 = Node("filho2")
-filho1.addChild(Node("Neto"))
+filho1.addChild(Node("Ne Bto"))
 filho2.addChild(Node("felipe"))
 
 node.addChild(filho1)
 node.addChild(filho2)
-exportSVG(node)
+
+salveNode(node, "mini")'''
+
+node = loadNode("mini")
+print("############################################3")
+print(node)
+#main()
+#exportSVG(node)
