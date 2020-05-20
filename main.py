@@ -101,19 +101,19 @@ def countPlus(word):
 	string -> int
 	recebe uma string e revolve o n° de '+' no inicio dela
 	'''
+	i=0
 	n=0
-	for i in word:
-		if i =='+':
-			n+=1
-		else:
-			break
+	while word[i]=='+':
+	    n+=1
+	    i+=1
+
 	return n
 
 def loadNode(file):
 	'''
 	string -> Node
 	'''
-	print("============")
+	#print("============")
 	if isinstance(file, str):
 		fl = file + ".txt"
 		temp = open(fl, "rt")
@@ -122,18 +122,14 @@ def loadNode(file):
 	else:
 		f = file
 
-
 	tamanho = len(f)
 	current = f.pop(0)
-	node = Node(current)
 	n = countPlus(current)
-
+	current = current[n:-1]
+	node = Node(current)
 	if f != []:
 		m = countPlus(f[0])
 		while n+1 == m:
-			print("current: ", current)
-			print(f[0])
-			print(f)
 			node.addChild(loadNode(f))
 			if f != []:
 				m = countPlus(f[0])
@@ -177,7 +173,8 @@ def drawRecursive(dwg, node, xy):
 		y+=16*node.child[i].countProli()
 		drawRecursive(dwg, node.child[i], (x+5,y))
 
-'''node = Node("raiz")#loadNode("test")
+'''
+node = Node("raiz")#loadNode("test")
 filho1 = Node("filho1")
 filho2 = Node("filho2")
 filho1.addChild(Node("Ne Bto"))
@@ -189,7 +186,7 @@ node.addChild(filho2)
 salveNode(node, "mini")'''
 
 node = loadNode("mini")
-print("############################################3")
+#print("############################################")
 print(node)
 #main()
 #exportSVG(node)
