@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 import requests, re
 from classes import *
-import svgwrite
+#import svgwrite
 
 def main():
 	node = baixarArvore()
