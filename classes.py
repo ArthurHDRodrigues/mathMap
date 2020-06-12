@@ -2,6 +2,7 @@ class Node:
     def __init__(self, name):
         self.name = name
         self.child = []
+        self.pos = (0,0)
 
     def __str__(self,spacer="   "):
         if self.child == []:

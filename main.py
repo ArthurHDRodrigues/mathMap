@@ -1,7 +1,8 @@
 from bs4 import BeautifulSoup
 import requests, re
 from classes import *
-#import svgwrite
+from latexUtil import *
+import random
 
 def main():
 	node = baixarArvore()
@@ -172,6 +173,30 @@ def drawRecursive(dwg, node, xy):
 	for i in range(len(node.child)):
 		y+=16*node.child[i].countProli()
 		drawRecursive(dwg, node.child[i], (x+5,y))
+		
+		
+def exportToTex(node,file=None,pos=(0,0)):
+    '''
+    recebe um node e plota ele num arquivo .tex
+    '''
+    
+    if file == None:
+        file = createTex(node.name,(20,20))
+        beginTikz(file,((0,0),(10,10)))
+        #pos = (random.uniform(0, 10),random.uniform(0, 10))
+        addNodeTikz(file,node.name,(0,10))
+        for c in node.child:
+            exportToTex(c,file,(0,10))
+        endTikz(file)
+        closeTex(file)
+    else:
+        x,y = pos
+        x+= random.uniform(0, 1)
+        y-= random.uniform(.7, 1.7)
+        addNodeTikz(file,node.name,(x,y))
+        for c in node.child:
+            exportToTex(c,file,(x,y))
+        
 
 '''
 node = Node("raiz")#loadNode("test")
@@ -188,5 +213,6 @@ salveNode(node, "mini")'''
 node = loadNode("mini")
 #print("############################################")
 print(node)
+exportToTex(node)
 #main()
 #exportSVG(node)

@@ -1,0 +1,29 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{pgf,tikz,pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usepackage{fontspec}
+\setmainfont[Renderer=ICU,Mapping=tex-text]{DejaVu Sans Mono}
+\usepackage[paperwidth=20cm,paperheight=20cm]{geometry}
+\begin{document}\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\clip(0, 0)rectangle(10, 10);
+
+\draw(0, 10) node[anchor=north west] {raiz};
+\draw (0,10) rectangle (1.3,9.3);
+\draw(0.9638292963226608, 8.988048378288184) node[anchor=north west] {filho1};
+\draw (0.9638292963226608,8.988048378288184) rectangle (2.763829296322661,8.288048378288185);
+\draw(1.457094580015715, 8.125399161472606) node[anchor=north west] {Ne Bto};
+\draw (1.457094580015715,8.125399161472606) rectangle (3.257094580015715,7.425399161472606);
+\draw(1.066732075032908, 7.460373628730613) node[anchor=north west] {oi};
+\draw (1.066732075032908,7.460373628730613) rectangle (1.866732075032908,6.760373628730613);
+\draw(1.9160129119775613, 7.788717394172038) node[anchor=north west] {tchau};
+\draw (1.9160129119775613,7.788717394172038) rectangle (3.466012911977561,7.088717394172038);
+\draw(0.11712919342807193, 8.640273061809438) node[anchor=north west] {filho2};
+\draw (0.11712919342807193,8.640273061809438) rectangle (1.9171291934280719,7.940273061809438);
+\draw(0.7454106264031524, 7.638759493020801) node[anchor=north west] {felipe};
+\draw (0.7454106264031524,7.638759493020801) rectangle (2.5454106264031524,6.938759493020801);
+\end{tikzpicture}
+
+\end{document}
