@@ -3,6 +3,7 @@ import requests, re
 from classes import *
 from latexUtil import *
 import random
+import pygame
 
 def main():
 	node = baixarArvore()
@@ -123,7 +124,7 @@ def loadNode(file):
 	else:
 		f = file
 
-	tamanho = len(f)
+	#tamanho = len(f)
 	current = f.pop(0)
 	n = countPlus(current)
 	current = current[n:-1]
@@ -175,27 +176,80 @@ def drawRecursive(dwg, node, xy):
 		drawRecursive(dwg, node.child[i], (x+5,y))
 		
 		
-def exportToTex(node,file=None,pos=(0,0)):
+def detPos(node):
     '''
-    recebe um node e plota ele num arquivo .tex
+    Recebe um node e muda as pos dos filhos para n ter overlap
+    limite = -300
+    '''
+    limite = -500
+    margem = .1
+    i,j = node.pos[0]+1,node.pos[1]-1
+    largura = []
+    
+    for c in node.child:
+        if j+c.size[1] > limite: #dentro do limite vertical
+            
+            c.pos = i,j
+            j+=c.size[1] - margem
+            largura.append(i+c.size[0])
+        else:
+            i = max(largura) + margem
+            j = node.pos[1]-1
+            
+            largura = [i+c.size[0]]
+            c.pos = i,j
+            j+=c.size[1]- margem
+    
+        
+    return node
+        
+def organizarNode(node):
+    '''
+    Node -> None
+    Recebe um node e devolve ele de forma que não haja overlap
+    pos da raiz = (0,10)
+    '''
+        
+    for c in node.child:
+        organizarNode(c)
+    
+    listaX = [node.pos[0]+.3 + len(node.name)*0.25]
+    listaY = [node.pos[1]-0.7]
+    node = detPos(node)
+    for c in node.child:
+        listaX.append(c.pos[0]+c.size[0])
+        listaY.append(c.pos[1]+c.size[1])
+    X = max(listaX, key=abs) - node.pos[0]+0.1
+    Y = max(listaY, key=abs) - node.pos[1]-0.1
+    
+    node.size = (X,Y)
+    
+    #node.pos = node.pos[0] + 0,node.pos[1] + 0 #translada (0,0)-->(0,10) (node.size[0] , abs(node.size[1]))
+    
+    return None
+		
+def exportToTex(node,file=None):
+    '''
+    Node,file,(float,float) -> None
+    
+    Recebe um node, um pontero para arquivo e uma dupla de floats e plota ele num arquivo .tex
+    
+    o pos é a posição do pai
     '''
     
     if file == None:
-        file = createTex(node.name,(20,20))
-        beginTikz(file,((0,0),(10,10)))
-        #pos = (random.uniform(0, 10),random.uniform(0, 10))
-        addNodeTikz(file,node.name,(0,10))
+        file = createTex(node.name,(node.size[0]+4,abs(node.size[1])+4))
+        beginTikz(file,((0,0),node.size))
+        addNodeTikz(file,node)
         for c in node.child:
-            exportToTex(c,file,(0,10))
+            exportToTex(c,file)
         endTikz(file)
         closeTex(file)
     else:
-        x,y = pos
-        x+= random.uniform(0, 1)
-        y-= random.uniform(.7, 1.7)
-        addNodeTikz(file,node.name,(x,y))
+        
+        addNodeTikz(file,node)
         for c in node.child:
-            exportToTex(c,file,(x,y))
+            exportToTex(c,file)
         
 
 '''
@@ -210,9 +264,14 @@ node.addChild(filho2)
 
 salveNode(node, "mini")'''
 
-node = loadNode("mini")
+node = loadNode("math")
 #print("############################################")
 print(node)
+node.pos = (0,0)
+
+organizarNode(node)
+node.updatePos()
+
 exportToTex(node)
 #main()
 #exportSVG(node)

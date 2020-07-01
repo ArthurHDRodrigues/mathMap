@@ -1,12 +1,11 @@
 from classes import *
-
 def createTex(name,size):
     '''
     string -> file
     
     retorna um objeto de arquivo, em modo write, com cabeçalho e nome name 
     '''
-    fonte = "DejaVu Sans Mono"
+    fonte = "Cousine"
     file = open(name+".tex","w")
     header = r"\documentclass[12pt]{article}"
     header += "\n"
@@ -16,8 +15,10 @@ def createTex(name,size):
     header += "\n"
     header += r'\usepackage{fontspec}'+"\n"+'\setmainfont[Renderer=ICU,Mapping=tex-text]{'+fonte+'}'
     header += "\n"
+    header +=r'\usepackage{amssymb}'
+    header += "\n"
     x,y = size
-    header += r"\usepackage[paperwidth="+str(x)+"cm,paperheight="+str(y)+"cm]{geometry}"
+    header += r"\usepackage[paperwidth="+str(x)+"cm,paperheight="+str(y)+"cm,left=0.1cm,right=0.1cm,top=0.1cm,bottom=0.1cm]{geometry}"
     header += "\n"
     file.write(header)
     
@@ -53,15 +54,18 @@ def endTikz(file):
     file.write("\n")
     return None
     
-def addNodeTikz(file,name,pos):
-    x,y = pos
+def addNodeTikz(file,node):
+    x = node.pos[0]
+    y = node.pos[1]
+    a = node.size[0]
+    b = node.size[1]
+    
     file.write("\n")
-    temp = r'\draw'+str(pos)+' node[anchor=north west] {'+name+'};'
+    temp = r'\draw'+str(node.pos)+' node[anchor=north west] {'+node.name+'};' +'\n'
     file.write(temp)
-    temp = '\n'
-    file.write(temp)
-    temp= r'\draw ('+str(x)+','+str(y)+') rectangle ('+str(.3+x+len(name)*0.25)+','+str(y-0.7)+ ');'
-    file.write(temp)
+    if node.child != []:
+        temp= r'\draw '+str(node.pos)+' rectangle ('+str(x+a) +','+str(y+b) +');'
+        file.write(temp)
     
 def main():
     file = createTex("ola_mundo.tex",(10,10))
