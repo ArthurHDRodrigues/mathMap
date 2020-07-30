@@ -1,14 +1,254 @@
-raiz
-+filho1
-++Ne Bto
-++oi
-++tchau
-+x
-+aaaa
-++bb
-++ccc
-+1
-++2
-+++3a
-+++3b
-++2b
+mini
++Several complex variables and analytic spaces
+++General reference works (handbooks, dictionaries, bibliographies, etc.) pertaining to several complex variables and analytic spaces
+++Introductory exposition (textbooks, tutorial papers, etc.) pertaining to several complex variables and analytic spaces
+++Research exposition (monographs, survey articles) pertaining to several complex variables and analytic spaces
+++History of several complex variables and analytic spaces
+++Software, source code, etc. for problems pertaining to several complex variables and analytic spaces
+++Proceedings, conferences, collections, etc. pertaining to several complex variables and analytic spaces
+++Computational methods for problems pertaining to several complex variables and analytic spaces
+++Research data for problems pertaining to several complex variables and analytic spaces
+++Holomorphic functions of several complex variables
++++Power series, series of functions of several complex variables
++++Polynomials and rational functions of several complex variables
++++Holomorphic functions of several complex variables
++++Multifunctions of several complex variables
++++Entire functions of several complex variables
++++Special families of functions of several complex variables
++++Bloch functions, normal functions of several complex variables
++++Normal families of holomorphic functions, mappings of several complex variables, and related topics (taut manifolds etc.)
++++Meromorphic functions of several complex variables
++++Nevanlinna theory; growth estimates; other inequalities of several complex variables
++++Integral representations; canonical kernels (Szegő, Bergman, etc.)
++++Integral representations, constructed kernels (e.g., Cauchy, Fantappiè-type kernels)
++++Residues for several complex variables
++++Other generalizations of function theory of one complex variable (should also be assigned at least one classification number from Section 30-XX)
++++\(H^p\)-spaces, Nevanlinna spaces of functions in several complex variables
++++Bergman spaces of functions in several complex variables
++++Other spaces of holomorphic functions of several complex variables (e.g., bounded mean oscillation (BMOA), vanishing mean oscillation (VMOA))
++++Algebras of holomorphic functions of several complex variables
++++Boundary behavior of holomorphic functions of several complex variables
++++Hyperfunctions
++++Harmonic analysis of several complex variables
++++Singular integrals of functions in several complex variables
++++Zero sets of holomorphic functions of several complex variables
++++Banach algebra techniques applied to functions of several complex variables
++++Functional analysis techniques applied to functions of several complex variables
+++Local analytic geometry
++++Analytic algebras and generalizations, preparation theorems
++++Germs of analytic sets, local parametrization
++++Analytic subsets of affine space
++++Semi-analytic sets, subanalytic sets, and generalizations
++++Triangulation and topological properties of semi-analytic andsubanalytic sets, and related questions
+++Analytic spaces
++++Real-analytic manifolds, real-analytic spaces
++++Real-analytic sets, complex Nash functions
++++Embedding of real-analytic manifolds
++++Complex supergeometry
++++Complex spaces
++++Topology of analytic spaces
++++Normal analytic spaces
++++Embedding of analytic spaces
++++Analytic subsets and submanifolds
++++Integration on analytic sets and spaces, currents
++++Analytic sheaves and cohomology groups
++++Local cohomology of analytic spaces
++++Duality theorems for analytic spaces
++++Sheaves of differential operators and their modules, \(D\)-modules
++++The Levi problem in complex spaces; generalizations
++++Applications of analytic spaces to physics and other areas of science
+++Analytic continuation
++++Domains of holomorphy
++++Envelopes of holomorphy
++++Continuation of analytic objects in several complex variables
++++Removable singularities in several complex variables
++++Riemann domains
+++Holomorphic convexity
++++Holomorphically convex complex spaces, reduction theory
++++Stein spaces, Stein manifolds
++++Polynomial convexity, rational convexity, meromorphic convexity in several complex variables
++++Holomorphic, polynomial and rational approximation, and interpolation in several complex variables; Runge pairs
++++Global boundary behavior of holomorphic functions of several complex variables
++++The Levi problem
+++Geometric convexity in several complex variables
++++\(q\)-convexity, \(q\)-concavity
++++Other notions of convexity in relation to several complex variables
++++Finite-type conditions for the boundary of a domain
++++Topological consequences of geometric convexity
++++Analytical consequences of geometric convexity (vanishing theorems, etc.)
++++Invariant metrics and pseudodistances in several complex variables
+++Deformations of analytic structures
++++Deformations of complex structures
++++Deformations of special (e.g., CR) structures
++++Deformations of fiber bundles
++++Deformations of submanifolds and subspaces
++++Complex-analytic moduli problems
++++Moduli of Riemann surfaces, Teichmüller theory (complex-analytic aspects in several variables)
++++Period matrices, variation of Hodge structure; degenerations
++++Moduli and deformations for ordinary differential equations (e.g., Knizhnik-Zamolodchikov equation)
++++Applications of deformations of analytic structures to the sciences
+++Holomorphic mappings and correspondences
++++Holomorphic mappings, (holomorphic) embeddings and related questions in several complex variables
++++Meromorphic mappings in several complex variables
++++Boundary uniqueness of mappings in several complex variables
++++Picard-type theorems and generalizations for several complex variables
++++Value distribution theory in higher dimensions
++++Proper holomorphic mappings, finiteness theorems
++++Boundary regularity of mappings in several complex variables
++++Iteration of holomorphic maps, fixed points of holomorphic maps and related problems for several complex variables
+++Compact analytic spaces
++++Compactification of analytic spaces
++++Algebraic dependence theorems
++++Compact complex surfaces
++++Compact complex \(3\)-folds
++++Compact complex \(n\)-folds
++++Transcendental methods of algebraic geometry (complex-analytic aspects)
++++Compact Kähler manifolds: generalizations, classification
++++Applications of compact analytic spaces to the sciences
+++Generalizations of analytic spaces
++++Banach analytic manifolds and spaces
++++Formal and graded complex spaces
++++Holomorphic maps with infinite-dimensional arguments or values
++++Differentiable functions on analytic spaces, differentiable spaces
+++Holomorphic fiber spaces
++++Holomorphic bundles and generalizations
++++Sheaves and cohomology of sections of holomorphic vector bundles, general results
++++Bundle convexity
++++Vanishing theorems
++++Twistor theory, double fibrations (complex-analytic aspects)
++++Applications of holomorphic fiber spaces to the sciences
+++Complex spaces with a group of automorphisms
++++Complex Lie groups, group actions on complex spaces
++++Homogeneous complex manifolds
++++Almost homogeneous manifolds and spaces
++++Hermitian symmetric spaces, bounded symmetric domains, Jordan algebras (complex-analytic aspects)
++++Automorphism groups of \(\mathbb{C}^n\) and affine manifolds
++++Automorphism groups of other complex spaces
++++Complex vector fields, holomorphic foliations, \(\mathbb{C}\)-actions
+++Automorphic functions
++++General theory of automorphic functions of several complex variables
++++Automorphic forms in several complex variables
++++Automorphic functions in symmetric domains
+++Non-Archimedean analysis (should also be assigned at least one other classification number from Section 32-XX describing the type of problem)
++++Non-Archimedean analysis (should also be assigned at least one other classification number from Section 32-XX describing the type of problem)
+++Complex manifolds
++++Special domains (Reinhardt, Hartogs, circular, tube, etc.) in \(\mathbb{C}^n\) and complex manifolds
++++Negative curvature complex manifolds
++++Positive curvature complex manifolds
++++Kähler manifolds
++++Kähler-Einstein manifolds
++++Calabi-Yau theory (complex-analytic aspects)
++++Notions of stability for complex manifolds
++++Stein manifolds
++++Uniformization of complex manifolds
++++Complex manifolds as subdomains of Euclidean space
++++Embedding theorems for complex manifolds
++++Hyperbolic and Kobayashi hyperbolic manifolds
++++Topological aspects of complex manifolds
++++Oka principle and Oka manifolds
++++Classification theorems for complex manifolds
++++Almost complex manifolds
++++Pseudoholomorphic curves
+++Complex singularities
++++Local complex singularities
++++Invariants of analytic local rings
++++Equisingularity (topological and analytic)
++++Global theory of complex singularities; cohomological properties
++++Relations with arrangements of hyperplanes
++++Complex surface and hypersurface singularities
++++Deformations of complex singularities; vanishing cycles
++++Mixed Hodge theory of singular varieties (complex-analytic aspects)
++++Monodromy; relations with differential equations and \(D\)-modules (complex-analytic aspects)
++++Modifications; resolution of singularities (complex-analytic aspects)
++++Topological aspects of complex singularities: Lefschetz theorems, topological classification, invariants
++++Milnor fibration; relations with knot theory
++++Stratifications; constructible sheaves; intersection cohomology (complex-analytic aspects)
++++Singularities of holomorphic vector fields and foliations
++++Other operations on complex singularities
+++Pseudoconvex domains
++++Domains of holomorphy
++++Strongly pseudoconvex domains
++++Worm domains
++++Finite-type domains
++++Geometric and analytic invariants on weakly pseudoconvex boundaries
++++Exhaustion functions
++++Peak functions
+++Pluripotential theory
++++Plurisubharmonic functions and generalizations
++++Plurisubharmonic exhaustion functions
++++General pluripotential theory
++++Capacity theory and generalizations
++++Lelong numbers
++++Removable sets in pluripotential theory
++++Plurisubharmonic extremal functions, pluricomplex Green functions
++++Currents
+++CR manifolds
++++CR structures, CR operators, and generalizations
++++CR functions
++++CR manifolds as boundaries of domains
++++Analysis on CR manifolds
++++Extension of functions and other analytic objects from CR manifolds
++++Embeddings of CR manifolds
++++Finite-type conditions on CR manifolds
++++Real submanifolds in complex manifolds
+++Differential operators in several variables
++++\(\overline\partial\) and \(\overline\partial\)-Neumann operators
++++\(\overline\partial_b\) and \(\overline\partial_b\)-Neumann operators
++++Complex Monge-Ampère operators
++++Pseudodifferential operators in several complex variables
++++Heat kernels in several complex variables
++++Other partial differential equations of complex analysis in several variables
++Special functions
+++General reference works (handbooks, dictionaries, bibliographies, etc.) pertaining to special functions
+++Introductory exposition (textbooks, tutorial papers, etc.) pertaining to special functions
+++Research exposition (monographs, survey articles) pertaining to special functions
+++History of special functions
+++Software, source code, etc. for problems pertaining to special functions
+++Proceedings, conferences, collections, etc. pertaining to special functions
+++Research data for problems pertaining to special functions
+++Elementary classical functions
++++Exponential and trigonometric functions
++++Gamma, beta and polygamma functions
++++Incomplete beta and gamma functions (error functions, probability integral, Fresnel integrals)
++++Higher logarithm functions
+++Hypergeometric functions
++++Classical hypergeometric functions, \({}_2F_1\)
++++Bessel and Airy functions, cylinder functions, \({}_0F_1\)
++++Confluent hypergeometric functions, Whittaker functions, \({}_1F_1\)
++++Generalized hypergeometric series, \({}_pF_q\)
++++Orthogonal polynomials and functions of hypergeometric type (Jacobi, Laguerre, Hermite, Askey scheme, etc.)
++++Other special orthogonal polynomials and functions
++++Orthogonal polynomials and functions in several variables expressible in terms of special functions in one variable
++++Orthogonal polynomials and functions associated with root systems
++++Spherical harmonics
++++Hypergeometric integrals and functions defined by them (\(E\), \(G\), \(H\) and \(I\) functions)
++++Appell, Horn and Lauricella functions
++++Hypergeometric functions associated with root systems
++++Other hypergeometric functions and integrals in several variables
++++Elliptic integrals as hypergeometric functions
++++Connections of hypergeometric functions with groups and algebras, and related topics
++++Applications of hypergeometric functions
+++Basic hypergeometric functions
++++\(q\)-gamma functions, \(q\)-beta functions and integrals
++++Basic hypergeometric functions in one variable, \({}_r\phi_s\)
++++Basic orthogonal polynomials and functions (Askey-Wilson polynomials, etc.)
++++Orthogonal polynomials and functions in several variables expressible in terms of basic hypergeometric functions in one variable
++++Basic orthogonal polynomials and functions associated with root systems (Macdonald polynomials, etc.)
++++Basic hypergeometric integrals and functions defined by them
++++Bibasic functions and multiple bases
++++Basic hypergeometric functions associated with root systems
++++Other basic hypergeometric functions and integrals in several variables
++++Connections of basic hypergeometric functions with quantum groups, Chevalley groups, \(p\)-adic groups, Hecke algebras, and related topics
++++Applications of basic hypergeometric functions
+++Other special functions
++++Elliptic functions and integrals
++++Lamé, Mathieu, and spheroidal wave functions
++++Mittag-Leffler functions and generalizations
++++Other wave functions
++++Painlevé-type functions
++++Other functions defined by series and integrals
++++Other functions coming from differential, difference and integral equations
++++Special functions in characteristic \(p\) (gamma functions, etc.)
+++Computational aspects of special functions
++++Numerical approximation and evaluation of special functions
++++Symbolic computation of special functions (Gosper and Zeilberger algorithms, etc.)

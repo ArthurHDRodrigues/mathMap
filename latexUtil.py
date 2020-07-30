@@ -61,10 +61,13 @@ def addNodeTikz(file,node):
     b = node.size[1]
     
     file.write("\n")
-    temp = r'\draw'+str(node.pos)+' node[anchor=north west] {'+node.name+'};' +'\n'
-    file.write(temp)
     if node.child != []:
-        temp= r'\draw '+str(node.pos)+' rectangle ('+str(x+a) +','+str(y+b) +');'
+        temp = r'\draw'+str(node.pos)+' node[anchor=north west] { \large '+node.name+'};' +'\n'
+        temp+= r'\draw '+str(node.pos)+' rectangle ('+str(x+a) +','+str(y+b) +');'
+        file.write(temp)
+    else:
+        temp = r'\draw'+str(node.pos)+' node[anchor=north west,align=left] {'+node.display_name+'};' +'\n'
+        #temp+= r'\draw '+str(node.pos)+' rectangle ('+str(x+a) +','+str(y+b) +');'
         file.write(temp)
     
 def main():

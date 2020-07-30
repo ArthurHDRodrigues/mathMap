@@ -1,6 +1,7 @@
 class Node:
     def __init__(self, name):
         self.name = name
+        self.display_name = ''
         self.child = []
         self.pos = (0,0)
         self.size = (0,0) #offset para somar com pos, o retangulo pos-size cobre o Node
