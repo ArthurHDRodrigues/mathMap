@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2020.3.5)  30 JUL 2020 18:31
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2020.3.5)  31 JUL 2020 17:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -820,12 +820,12 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(2.84544pt, 3940.70627pt, 2.84544pt)
-* v-part:(T,H,B)=(2.84544pt, 1644.56895pt, 2.84544pt)
-* \paperwidth=3946.39716pt
-* \paperheight=1650.25984pt
-* \textwidth=3940.70627pt
-* \textheight=1644.56895pt
+* h-part:(L,W,R)=(2.84544pt, 2222.15997pt, 2.84544pt)
+* v-part:(T,H,B)=(2.84544pt, 2048.59799pt, 2.84544pt)
+* \paperwidth=2227.85086pt
+* \paperheight=2054.28888pt
+* \textwidth=2222.15997pt
+* \textheight=2048.59799pt
 * \oddsidemargin=-69.42455pt
 * \evensidemargin=-69.42455pt
 * \topmargin=-106.42455pt
@@ -846,16 +846,16 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 40.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 30.
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 40.
+LaTeX Font Info:    Try loading font information for U+msa on input line 30.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 40.
+LaTeX Font Info:    Try loading font information for U+msb on input line 30.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -863,12 +863,12 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ] (./mini.aux) ) 
 Here is how much of TeX's memory you used:
- 33516 strings out of 492912
- 849519 string characters out of 6134894
- 1136988 words of memory out of 5000000
- 37153 multiletter control sequences out of 15000+600000
- 537605 words of font info for 61 fonts, out of 8000000 for 9000
+ 33638 strings out of 492912
+ 852189 string characters out of 6134894
+ 1193763 words of memory out of 5000000
+ 37273 multiletter control sequences out of 15000+600000
+ 537621 words of font info for 63 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 69i,6n,119p,725b,619s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 69i,6n,119p,725b,636s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on mini.pdf (1 page).

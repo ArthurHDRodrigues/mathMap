@@ -61,15 +61,49 @@ def addNodeTikz(file,node):
     b = node.size[1]
     
     file.write("\n")
-    if node.child != []:
-        temp = r'\draw'+str(node.pos)+' node[anchor=north west] { \large '+node.name+'};' +'\n'
+    
+    switcher = {
+    0: '\Huge ',  
+    1: '\LARGE ',
+    2: '\large ',
+    3: ''
+    }
+    #value = switcher.get(key, "default")
+    
+    temp = r'\draw'+str(node.pos)+' node[anchor=north west,align=left] {'
+    temp+= switcher.get(node.depth,"default")+node.display_name+'};' +'\n'
+    temp+= r'\draw '+str(node.pos)+' rectangle ('+str(x+a) +','+str(y+b) +');'
+    file.write(temp)
+    
+    '''if node.child != []:
+        temp = r'\draw'+str(node.pos)+' node[anchor=north west] { \large '+node.name+str(node.depth)+'};' +'\n'
         temp+= r'\draw '+str(node.pos)+' rectangle ('+str(x+a) +','+str(y+b) +');'
         file.write(temp)
     else:
         temp = r'\draw'+str(node.pos)+' node[anchor=north west,align=left] {'+node.display_name+'};' +'\n'
-        #temp+= r'\draw '+str(node.pos)+' rectangle ('+str(x+a) +','+str(y+b) +');'
-        file.write(temp)
+        temp+= r'\draw '+str(node.pos)+' rectangle ('+str(x+a) +','+str(y+b) +');'
+        file.write(temp)'''
+        
+def exportToTex(node,file=None):
+    '''
+    Node,file,(float,float) -> None
     
+    Recebe um node, um pontero para arquivo e uma dupla de floats e plota ele num arquivo .tex
+    
+    o pos é a posição do pai
+    '''
+    if file == None:
+        file = createTex(node.name+'/'+node.name,(node.size[0]+4,abs(node.size[1])+4))
+        beginTikz(file,((0,0),node.size))
+        addNodeTikz(file,node)
+        for c in node.child:
+            exportToTex(c,file)
+        endTikz(file)
+        closeTex(file)
+    else:
+        addNodeTikz(file,node)
+        for c in node.child:
+            exportToTex(c,file)   
 def main():
     file = createTex("ola_mundo.tex",(10,10))
     beginTikz(file,((-4.1,-1.7),(10.5,2)))

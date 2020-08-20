@@ -5,6 +5,7 @@ class Node:
         self.child = []
         self.pos = (0,0)
         self.size = (0,0) #offset para somar com pos, o retangulo pos-size cobre o Node
+        self.depth = 0
 
     def __str__(self,spacer="   "):
         if self.child == []:
@@ -46,7 +47,16 @@ class Node:
         '''
         for c in self.child:
             c.pos = c.pos[0]+self.pos[0],c.pos[1]+self.pos[1]
+            c.depth = self.depth+1
             c.updatePos()
+            
+    def updateDepth(self):
+        '''
+        calcula a posição absoluta de cada nó
+        '''
+        for c in self.child:
+            c.depth = self.depth+1
+            c.updateDepth()
         
     
 def updatePosAndSize(node):

@@ -1,4 +1,4 @@
-math
+half
 +History and biography
 ++General reference works (handbooks, dictionaries, bibliographies, etc.) pertaining to history and biography
 ++Introductory exposition (textbooks, tutorial papers, etc.) pertaining to history and biography

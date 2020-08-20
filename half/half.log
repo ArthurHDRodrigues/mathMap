@@ -1,9 +1,9 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2020.3.5)  30 JUL 2020 19:46
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2020.3.5)  20 AUG 2020 16:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**math.tex
-(./math.tex
+**half.tex
+(./half.tex
 LaTeX2e <2018-12-01>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
@@ -730,8 +730,8 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen263
 \Gm@layoutvoffset=\dimen264
 \Gm@dimlist=\toks34
-) (./math.aux)
-\openout1 = `math.aux'.
+) (./half.aux)
+\openout1 = `half.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
@@ -820,12 +820,12 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(2.84544pt, 10342.57634pt, 2.84544pt)
-* v-part:(T,H,B)=(2.84544pt, 4216.6979pt, 2.84544pt)
-* \paperwidth=10348.26723pt
-* \paperheight=4222.3888pt
-* \textwidth=10342.57634pt
-* \textheight=4216.6979pt
+* h-part:(L,W,R)=(2.84544pt, 12896.49599pt, 2.84544pt)
+* v-part:(T,H,B)=(2.84544pt, 4344.7353pt, 2.84544pt)
+* \paperwidth=12902.18687pt
+* \paperheight=4350.4262pt
+* \textwidth=12896.49599pt
+* \textheight=4344.7353pt
 * \oddsidemargin=-69.42455pt
 * \evensidemargin=-69.42455pt
 * \topmargin=-106.42455pt
@@ -846,29 +846,29 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 40.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 280.
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 40.
+LaTeX Font Info:    Try loading font information for U+msa on input line 280.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 40.
+LaTeX Font Info:    Try loading font information for U+msb on input line 280.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-] (./math.aux) ) 
+] (./half.aux) ) 
 Here is how much of TeX's memory you used:
- 34415 strings out of 492912
- 871218 string characters out of 6134894
- 2549151 words of memory out of 5000000
- 38050 multiletter control sequences out of 15000+600000
- 540716 words of font info for 77 fonts, out of 8000000 for 9000
+ 34985 strings out of 492912
+ 885851 string characters out of 6134894
+ 3500363 words of memory out of 5000000
+ 38617 multiletter control sequences out of 15000+600000
+ 540732 words of font info for 79 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 69i,6n,119p,725b,619s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 69i,6n,119p,725b,636s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on math.pdf (1 page).
+Output written on half.pdf (1 page).
