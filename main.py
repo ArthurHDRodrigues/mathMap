@@ -68,8 +68,10 @@ def detPos(node,limite = -200):
                     node.child.insert(k,node.child.pop(l))
                     
                     node.child[k].pos = largura_linha + margem,j
-                    largura_linha += node.child[k].size[0]+ margem
+                    
+                    largura_para_add = node.child[k].size[0]+margem
                     alturas_da_linha.append(node.child[k].size[1])
+                    
                     
                     k+=1
                     if node.child[k-1].size[1] - node.child[index_ultimo_horizontal].size[1] > 0:
@@ -86,28 +88,34 @@ def detPos(node,limite = -200):
                             if altura_sub_bloco + node.child[t].size[1] - margem > sub_limite_vertical and largura_linha + node.child[t].size[0] + margem <= limite_horizontal:
                                 l+=1
                                 node.child.insert(k,node.child.pop(t))
-                                
                                 node.child[k].pos = pos_x,pos_y + altura_sub_bloco - margem
                                 altura_sub_bloco += node.child[k].size[1] - margem
                                 k+=1
+                    
                         
                     
-                    elif node.child[index_ultimo_horizontal].size[1] - node.child[k-1].size[1] > 0:
+                    elif altura_sub_bloco - node.child[k-1].size[1] > 0:
                         #o da esquerda (index_ultimo_horizontal) é menor
                         pos_x = node.child[index_ultimo_horizontal].pos[0]
                         pos_y = node.child[index_ultimo_horizontal].pos[1]
-                        altura_sub_bloco = node.child[index_ultimo_horizontal].size[1]
+                        #altura_sub_bloco = node.child[index_ultimo_horizontal].size[1]
                         sub_limite_vertical = node.child[k-1].size[1]
                         index_ultimo_horizontal = k-1
                         for t in range(k,n):
                             if altura_sub_bloco + node.child[t].size[1] - margem > sub_limite_vertical:
+                            
+                                if node.child[t].name == "Exponential sums and character sums":
+                                    print(node.child[index_ultimo_horizontal].name)
                                 l+=1
                                 node.child.insert(k,node.child.pop(t))
                                 node.child[k].pos = pos_x,pos_y + altura_sub_bloco - margem
                                 altura_sub_bloco += node.child[k].size[1] - margem
                                 k+=1
+                        
+                        altura_sub_bloco = node.child[index_ultimo_horizontal].size[1]
                     else:
                         index_ultimo_horizontal = k-1
+                    largura_linha+= largura_para_add
                 l+=1
                             
                     
