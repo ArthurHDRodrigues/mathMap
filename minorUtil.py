@@ -36,22 +36,45 @@ def removeLixo(node):
             removeLixo(node.child[i])
             i+=1
 
-def countSymbols(name):
+def countSymbols(frase):
     '''
-    string -> int
-    Recebe uma string e devolve o comprimeno em digitos após ser renderizada
+    string -> list
+    Recebe uma string e devolve uma lista, em que cada elemento será um símbolo.
     '''
+    inMathMode = False
     ignore = False
-    n=0
-    for i in range(len(name)):
-        if i == '\\':
-            ignore = True
-        elif i == ' ':
-            ignore = False
-        elif ignore == False:
-             n+=1
+    
+    lista_sym = []
+    n = len(frase)
+    i = 0
+    
+    while i<n-1:
+        if frase[i]+frase[i+1] == '\\(':
+            inMathMode = True
+            if i==0:
+                lista_sym.append(0)
+            i+=1
+        elif frase[i]+frase[i+1] == '\\)':
+            inMathMode = False
+            i+=1
+        elif inMathMode == False:
+            lista_sym.append(i)
+            
+        elif inMathMode == True and frase[i] == '\\':
+            ignore=True
+            lista_sym.append(i)
+        elif inMathMode == True and frase[i] == '^':
+            ignore=True
+        elif inMathMode == True and (frase[i] == '~' or frase[i] == ','):
+            ignore=False
+        elif inMathMode == True and (frase[i] == '('or frase[i] == ')'):
+            ignore=False
+            lista_sym.append(i)
+        elif inMathMode == True and ignore == False:
+            lista_sym.append(i)
+        i+=1
              
-    return n
+    return lista_sym
         
 
 

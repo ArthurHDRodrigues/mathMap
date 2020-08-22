@@ -145,20 +145,15 @@ def quebraPalavra(frase, proporcao):
     recebe uma frase e uma proporção e devolve a frase quebrada de tal forma que respeite a proporção
     
     Medições empiricas indicam que cada letra é um retangulo de 3wx4h
-     ___
-    |   |
-    |   |
-    |   |
-    |___|
     '''
-    frase = treatName(frase)
-    comprimento = len(frase) #comprimento em pixels
+    frase = treatName(frase) #troca espaços por ~ no mathmode
+    lista_sym = countSymbols(frase)
+    comprimento = len(lista_sym) #conta quantos simbolos teremos após renderizar
    
-    #print('comprimento',comprimento)
-    x = math.sqrt(3*comprimento/(4*proporcao))
+
+    x = math.sqrt(3*comprimento/(4*proporcao)) #calcula a altura da caixa, a proporção de um símbolo é 3/4
     c = math.ceil(x)
     f = math.floor(x)
-    #print('x',x)
     
     if c==0:
         numero_linhas = f
@@ -168,30 +163,43 @@ def quebraPalavra(frase, proporcao):
       numero_linhas = f
     else:
       numero_linhas = c
-        
-    altura = numero_linhas*4
+    
+    
     
     largura_bloco = comprimento//numero_linhas
     lista = []
-    for i in range(1,numero_linhas+1):
-        lista.append(frase[(i-1)*largura_bloco:i*largura_bloco])
+    n = numero_linhas-1
+    #print('numero_linhas',numero_linhas)
+    #print('comprimento',comprimento)
+    #print('largura_bloco',largura_bloco)
+    for i in range(n):
         
-    lista[-1]+=frase[numero_linhas*largura_bloco:] #cola o resto da string que não gerou um bloco novo
+        c = lista_sym[(i+1)*largura_bloco]
+        
+        lista.append(frase[lista_sym[(i)*largura_bloco]:c])
+        #print('bloco do meio',frase[lista_sym[(i)*largura_bloco]:c])
+        
+    lista.append(frase[lista_sym[(numero_linhas-1)*largura_bloco]:])
+    #print('bloco final',frase[lista_sym[(numero_linhas-1)*largura_bloco]:])
+    #lista[-1]+=frase[numero_linhas*largura_bloco:] #cola o resto da string que não gerou um bloco novo
+
 
     i=0
-    n = numero_linhas-1
+    len_cada_linha = []
     while i< n:
         #print(i)
         if lista[i][-1] == ' ':#detecta se o ultimo char é um espaço e o remove.
             lista[i] = lista[i][:-1]
+            len_cada_linha.append(largura_bloco)
         elif lista[i+1][0] == ' ':
             lista[i+1] = lista[i+1][1:]#detecta se o primeiro char é um espaço e o remove.
+            len_cada_linha.append(largura_bloco)
             
-        elif lista[i][-1] != ' ' and lista[i+1][0] != ' ': #cortou no meio de uma palavra
-           pedaco_esq = lista[i].split(" ")[-1] #pega a metade da direita
+        else: #if lista[i][-1] != ' ' and lista[i+1][0] != ' ': #cortou no meio de uma palavra
+           pedaco_esq = lista[i].split(" ")[-1] #pega a metade da esquerda
            pedaco_dir = lista[i+1].split(" ")[0] #pega a metade da direita
-           #print(pedaco_esq)
-           #print(pedaco_dir)
+
+
            if len(pedaco_esq) > len(pedaco_dir):
                lista[i]+=pedaco_dir
                lista[i+1] = lista[i+1][len(pedaco_dir)+1:]
@@ -209,16 +217,19 @@ def quebraPalavra(frase, proporcao):
                    n-=1
            #print(lista)
         i+=1
+        
+        
     resultado = ''
     len_cada_linha =[]
     n = len(lista)
     for i in range(n-1):
         if lista[i]!='':
             resultado += lista[i]+r'\\ '
-            len_cada_linha.append(len(lista[i]))
+            len_cada_linha.append(lista_sym[]          )
     resultado+=lista[-1]
     len_cada_linha.append(len(lista[-1]))
-    return resultado,max(len_cada_linha),numero_linhas
+    tamanho = (lista_sym[-1] - lista_sym[(n-1)*largura_bloco])
+    return resultado,tamanho,numero_linhas
         
 def organizarNode(node,limite =-150):
     '''
