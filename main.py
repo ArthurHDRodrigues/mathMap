@@ -305,9 +305,6 @@ node.addChild(filho2)
 salveNode(node, "mini")'''
 
 
-#s = 'aabb\(\oi tchau\) uu'
-#print(treatName(s))
-
 node = loadNode("half/half")
 node.pos = (0,0)
 removeLixo(node)
@@ -316,13 +313,11 @@ organizarNode(node)
 node.updatePos()
 exportToTex(node)
 
-#f = 'Inertial manifolds'
-#print(quebraPalavra(f, 2))
 '''
 x = '\((\infty,1)\)-categories (quasi-categories, Segal spaces, etc.); \(\infty\)-topoi, stable \(\infty\)-categories'
 h = 'Convexity properties of solutions to PDEs and systems of PDEs with constant coefficients'   
 s = 'Boundary value problems for systems of linear higher-order PDEs'
-
+ 
 print(countSymbols(x))'''
 
 
