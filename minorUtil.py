@@ -41,41 +41,24 @@ def countSymbols(frase):
     string -> list
     Recebe uma string e devolve uma lista, em que cada elemento será um símbolo.
     '''
-    inMathMode = False
-    ignore = False
-    
     lista_sym = []
     n = len(frase)
     i = 0
-    
-    while i<n-1:
-        if frase[i]+frase[i+1] == '\\(':
-            inMathMode = True
-            if i==0:
-                lista_sym.append(0)
-            i+=1
-        elif frase[i]+frase[i+1] == '\\)':
-            inMathMode = False
-            i+=1
-        elif inMathMode == False:
-            lista_sym.append(i)
-            
-        elif inMathMode == True and frase[i] == '\\':
-            ignore=True
-            lista_sym.append(i)
-        elif inMathMode == True and frase[i] == '^':
-            ignore=True
-        elif inMathMode == True and (frase[i] == '~' or frase[i] == ','):
-            ignore=False
-        elif inMathMode == True and (frase[i] == '('or frase[i] == ')'):
-            ignore=False
-            lista_sym.append(i)
-        elif inMathMode == True and ignore == False:
-            lista_sym.append(i)
-        i+=1
-             
-    return lista_sym
         
-
-
+    while i<n-1:
+        
+        if frase[i]+frase[i+1] == r'\(':
+            j = i+1
+            while j<n and (frase[j]!= '~' and frase[j-1] + frase[j] != r'\)'): #and frase[j] != r'('):
+                #print(frase[j-1] + frase[j])
+                #print(frase[j-1] + frase[j] != r'\)')
+                j+=1
+            lista_sym.append(frase[i:j+1])
+            i=j
+        else:
+            lista_sym.append(frase[i])
+        i+=1
+    if i == n-1:
+        lista_sym.append(frase[i])
+    return lista_sym
 

@@ -921,7 +921,7 @@ half
 +++Calabi-Yau manifolds (algebro-geometric aspects)
 +++Mirror symmetry (algebro-geometric aspects)
 +++\(4\)-folds
-+++\(n\)-folds (\(n>4\))
++++\(n\)-folds (\(n > 4\))
 +++Holomorphic symplectic varieties, hyper-Kähler varieties
 +++Fano varieties
 +++Automorphisms of surfaces and higher-dimensional varieties

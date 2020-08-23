@@ -167,69 +167,88 @@ def quebraPalavra(frase, proporcao):
     
     
     largura_bloco = comprimento//numero_linhas
-    lista = []
+    lista_de_linhas = []
     n = numero_linhas-1
     #print('numero_linhas',numero_linhas)
     #print('comprimento',comprimento)
     #print('largura_bloco',largura_bloco)
     for i in range(n):
-        
-        c = lista_sym[(i+1)*largura_bloco]
-        
-        lista.append(frase[lista_sym[(i)*largura_bloco]:c])
-        #print('bloco do meio',frase[lista_sym[(i)*largura_bloco]:c])
-        
-    lista.append(frase[lista_sym[(numero_linhas-1)*largura_bloco]:])
-    #print('bloco final',frase[lista_sym[(numero_linhas-1)*largura_bloco]:])
-    #lista[-1]+=frase[numero_linhas*largura_bloco:] #cola o resto da string que não gerou um bloco novo
+        lista_de_linhas.append(lista_sym[(i)*largura_bloco : (i+1)*largura_bloco])
+    
+    lista_de_linhas.append(lista_sym[n*largura_bloco:])
 
-
+    print(lista_de_linhas)
     i=0
-    len_cada_linha = []
     while i< n:
-        #print(i)
-        if lista[i][-1] == ' ':#detecta se o ultimo char é um espaço e o remove.
-            lista[i] = lista[i][:-1]
-            len_cada_linha.append(largura_bloco)
-        elif lista[i+1][0] == ' ':
-            lista[i+1] = lista[i+1][1:]#detecta se o primeiro char é um espaço e o remove.
-            len_cada_linha.append(largura_bloco)
+        #cortou no meio de uma palavra   
+        if lista_de_linhas[i+1][0] != ' ' and lista_de_linhas[i][-1] != ' ':
+            m = len(lista_de_linhas[i])
+            e = m
+            while e > 0 and lista_de_linhas[i][e-1] != ' ':
+                e-=1
+            pedaco_esq = lista_de_linhas[i][e:] #pega a metade da esquerda
+            #print('pedaco_esq',pedaco_esq,e)
             
-        else: #if lista[i][-1] != ' ' and lista[i+1][0] != ' ': #cortou no meio de uma palavra
-           pedaco_esq = lista[i].split(" ")[-1] #pega a metade da esquerda
-           pedaco_dir = lista[i+1].split(" ")[0] #pega a metade da direita
+            d = 0
+            l = len(lista_de_linhas[i+1])
+            while d<l and lista_de_linhas[i+1][d] != ' ':
+                d+=1
+            pedaco_dir = lista_de_linhas[i+1][:d] #pega a metade da direita
+            #print('pedaco_dir',pedaco_dir,d)
 
+            if m-e > d:
+                lista_de_linhas[i] += pedaco_dir
+                lista_de_linhas[i+1] = lista_de_linhas[i+1][d:]
+               
+                if lista_de_linhas[i+1] == []:
+                    lista_de_linhas.pop(i+1)
+                    i-=1
+                    n-=1
 
-           if len(pedaco_esq) > len(pedaco_dir):
-               lista[i]+=pedaco_dir
-               lista[i+1] = lista[i+1][len(pedaco_dir)+1:]
-               if lista[i+1] == '':
-                   lista.pop(i+1)
-                   i-=1
-                   n-=1
-
-           else:
-               lista[i+1] = pedaco_esq + lista[i+1]
-               lista[i] = lista[i][:-len(pedaco_esq)]
-               if lista[i] == '':
-                   lista.pop(i)
-                   i-=1
-                   n-=1
-           #print(lista)
+            else:
+                lista_de_linhas[i+1] = pedaco_esq + lista_de_linhas[i+1]
+                lista_de_linhas[i] = lista_de_linhas[i][:-(m-e)]
+                if lista_de_linhas[i] == []:
+                    lista_de_linhas.pop(i)
+                    i-=1
+                    n-=1
         i+=1
         
         
     resultado = ''
-    len_cada_linha =[]
-    n = len(lista)
-    for i in range(n-1):
-        if lista[i]!='':
-            resultado += lista[i]+r'\\ '
-            len_cada_linha.append(lista_sym[]          )
-    resultado+=lista[-1]
-    len_cada_linha.append(len(lista[-1]))
-    tamanho = (lista_sym[-1] - lista_sym[(n-1)*largura_bloco])
-    return resultado,tamanho,numero_linhas
+    len_cada_linha = []
+    n = len(lista_de_linhas)
+    #print(lista_de_linhas)
+    i=0
+    while i<n:
+        #print(i,lista_de_linhas[i])
+        if lista_de_linhas[i] == []:
+            lista_de_linhas.pop(i)
+            n-=1
+        elif lista_de_linhas[i] == [' ']:
+            lista_de_linhas.pop(i)
+            n-=1
+        else:
+            #detecta se o ultimo char é um espaço e o remove.
+            if lista_de_linhas[i][-1] == ' ':
+                lista_de_linhas[i].pop(-1)
+            
+            #detecta se o primeiro char é um espaço e o remove.  
+            elif lista_de_linhas[i][0] == ' ':
+                lista_de_linhas[i].pop(0)
+            
+            m = len(lista_de_linhas[i])
+            print('m',m)
+            len_cada_linha.append(m)
+            for j in range(m):
+                resultado+=lista_de_linhas[i][j]
+            if i<n-1:
+                resultado+=r'\\ '
+            i+=1
+        
+        
+
+    return resultado,max(len_cada_linha),n
         
 def organizarNode(node,limite =-150):
     '''
@@ -296,4 +315,14 @@ node.updateDepth()
 organizarNode(node)
 node.updatePos()
 exportToTex(node)
+
+#f = 'Inertial manifolds'
+#print(quebraPalavra(f, 2))
+'''
+x = '\((\infty,1)\)-categories (quasi-categories, Segal spaces, etc.); \(\infty\)-topoi, stable \(\infty\)-categories'
+h = 'Convexity properties of solutions to PDEs and systems of PDEs with constant coefficients'   
+s = 'Boundary value problems for systems of linear higher-order PDEs'
+
+print(countSymbols(x))'''
+
 
