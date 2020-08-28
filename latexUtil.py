@@ -68,21 +68,25 @@ def addNodeTikz(file,node):
     2: '\large ',
     3: ''
     }
+    color = {
+    0: 'black!10',  
+    1: 'black!20',
+    2: 'black!30',
+    3: 'black!40'
+    }
     #value = switcher.get(key, "default")
+    temp = r'\filldraw [color=black,fill='+color.get(node.depth,"default")+']'+str(node.pos)+' rectangle ('+str(x+a) +','+str(y+b) +');\n'
+    temp += r'\draw'+str(node.pos)+' node[anchor=north west,align=left] {'
     
-    temp = r'\draw'+str(node.pos)+' node[anchor=north west,align=left] {'
-    temp+= switcher.get(node.depth,"default")+node.display_name+'};' +'\n'
-    temp+= r'\draw '+str(node.pos)+' rectangle ('+str(x+a) +','+str(y+b) +');'
+    ultimo = node.display_name.pop(-1)
+    for linha in node.display_name:
+        temp += switcher.get(node.depth,"default")+linha+r'\\ '
+        
+    temp+= switcher.get(node.depth,"default")+ultimo
+    temp+='};' +'\n'
+    
     file.write(temp)
     
-    '''if node.child != []:
-        temp = r'\draw'+str(node.pos)+' node[anchor=north west] { \large '+node.name+str(node.depth)+'};' +'\n'
-        temp+= r'\draw '+str(node.pos)+' rectangle ('+str(x+a) +','+str(y+b) +');'
-        file.write(temp)
-    else:
-        temp = r'\draw'+str(node.pos)+' node[anchor=north west,align=left] {'+node.display_name+'};' +'\n'
-        temp+= r'\draw '+str(node.pos)+' rectangle ('+str(x+a) +','+str(y+b) +');'
-        file.write(temp)'''
         
 def exportToTex(node,file=None):
     '''

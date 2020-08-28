@@ -218,7 +218,6 @@ def quebraPalavra(frase, proporcao):
     resultado = ''
     len_cada_linha = []
     n = len(lista_de_linhas)
-    #print(lista_de_linhas)
     i=0
     while i<n:
         #print(i,lista_de_linhas[i])
@@ -238,31 +237,36 @@ def quebraPalavra(frase, proporcao):
                 lista_de_linhas[i].pop(0)
             
             m = len(lista_de_linhas[i])
-            print('m',m)
+            
             len_cada_linha.append(m)
+            resultado = ''
             for j in range(m):
                 resultado+=lista_de_linhas[i][j]
-            if i<n-1:
-                resultado+=r'\\ '
+            lista_de_linhas[i] = resultado
+            '''for j in range(m):
+                resultado+=lista_de_linhas[i][j]
+            if i<n-1:'''
+                #resultado+=r'\\ '
             i+=1
         
         
 
-    return resultado,max(len_cada_linha),n
+    return lista_de_linhas,max(len_cada_linha),n
         
-def organizarNode(node,limite =-150):
+def  organizarNode(node,limite =-150):
     '''
     Node -> None
     Recebe um node e devolve ele de forma que não haja overlap
     pos da raiz = (0,10)
     '''
     for c in node.child:
-        organizarNode(c,limite+5)
+        organizarNode(c,limite/2)#+5
     
     
     if node.depth == 2 and node.child == []:
         node.display_name,comprimento,numero_de_linhas = quebraPalavra(node.name, 5)
         comprimento = comprimento*.31
+        altura = .55
         
     elif node.depth != 3:
         switcher = {
@@ -270,16 +274,18 @@ def organizarNode(node,limite =-150):
             1: 0.432,
             2: 0.31
             }
-        node.display_name = node.name
+        node.display_name = [node.name]
         comprimento = len(node.name)*switcher.get(node.depth,"default")
         numero_de_linhas = 1
-        #print(node.name,":",switcher.get(node.depth,"default"))
+        altura = .5
     else:
         node.display_name,comprimento,numero_de_linhas = quebraPalavra(node.name, 2) #15
         comprimento = comprimento*.25
+        altura = .5
     
     listaX = [node.pos[0]+.5 + comprimento]
-    listaY = [node.pos[1]-0.5*numero_de_linhas]
+    listaY = [node.pos[1]-altura*numero_de_linhas]
+    
     node = detPos(node,limite+1)
     for c in node.child:
         listaX.append(c.pos[0]+c.size[0])

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2020.3.5)  19 AUG 2020 14:59
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2019/dev/Debian) (preloaded format=xelatex 2020.3.5)  27 AUG 2020 11:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -730,6 +730,15 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen263
 \Gm@layoutvoffset=\dimen264
 \Gm@dimlist=\toks34
+
+! Dimension too large.
+<to be read again> 
+                   \relax 
+l.1008 \Gm@process
+                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
 ) (./math.aux)
 \openout1 = `math.aux'.
 
@@ -747,8 +756,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
-
-ABD: EveryShipout initializing macros
+ ABD: EveryShipout initializing macros
 Package pgfplots notification 'compat/show suggested version=true': you might b
 enefit from \pgfplotsset{compat=1.16} (current compat level: 1.15).
 
@@ -820,12 +828,12 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(2.84544pt, 14077.56973pt, 2.84544pt)
-* v-part:(T,H,B)=(2.84544pt, 4262.22249pt, 2.84544pt)
-* \paperwidth=14083.26062pt
-* \paperheight=4267.91338pt
-* \textwidth=14077.56973pt
-* \textheight=4262.22249pt
+* h-part:(L,W,R)=(2.84544pt, 16378.3091pt, 2.84544pt)
+* v-part:(T,H,B)=(2.84544pt, 4279.29431pt, 2.84544pt)
+* \paperwidth=16383.99998pt
+* \paperheight=4284.9852pt
+* \textwidth=16378.3091pt
+* \textheight=4279.29431pt
 * \oddsidemargin=-69.42455pt
 * \evensidemargin=-69.42455pt
 * \topmargin=-106.42455pt
@@ -846,29 +854,817 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 282.
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.12 ...(0, 0)rectangle(912.1700000000003, -146.6)
+                                                  ;
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.14 ...0, 0) rectangle (912.1700000000003,-146.6)
+                                                  ;
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 276.
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 282.
+LaTeX Font Info:    Try loading font information for U+msa on input line 276.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 282.
+LaTeX Font Info:    Try loading font information for U+msb on input line 276.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.9104 ... -1) rectangle (599.6800000000001,-45.6)
+                                                  ;
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
 
-] (./math.aux) ) 
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.9128 ... -2) rectangle (578.3300000000002,-15.5)
+                                                  ;
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<argument> \pgf@x 
+                  
+l.9129 ...ge Inference from stochastic processes};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<argument> \pgf@x 
+                  
+l.9129 ...ge Inference from stochastic processes};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@x 
+                       
+l.9129 ...ge Inference from stochastic processes};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.9134 ..., -3) rectangle (577.7800000000002,-5.6)
+                                                  ;
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<argument> \pgf@x 
+                  
+l.9135 ... inference from\\ stochastic processes};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<argument> \pgf@x 
+                  
+l.9135 ... inference from\\ stochastic processes};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@x 
+                       
+l.9135 ... inference from\\ stochastic processes};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.9140 ...-5.7) rectangle (576.2800000000002,-8.3)
+                                                  ;
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<argument> \pgf@x 
+                  
+l.9141 ...ssion,\\  etc. in\\ statistics (GARCH)};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<argument> \pgf@x 
+                  
+l.9141 ...ssion,\\  etc. in\\ statistics (GARCH)};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@x 
+                       
+l.9141 ...ssion,\\  etc. in\\ statistics (GARCH)};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.9155 ... (578.2300000000001,-12.700000000000001)
+                                                  ;
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<argument> \pgf@x 
+                  
+l.9156 ...ft] {Random\\ fields; image\\ analysis};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<argument> \pgf@x 
+                  
+l.9156 ...ft] {Random\\ fields; image\\ analysis};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@x 
+                       
+l.9156 ...ft] {Random\\ fields; image\\ analysis};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.9326 ...ck,fill=black!30](578.4300000000001, -2)
+                                                   rectangle (589.33,-13.3);
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.9326 ...0000000001, -2) rectangle (589.33,-13.3)
+                                                  ;
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.9327 \draw(578.4300000000001, -2)
+                                    node[anchor=north west,align=left] {\lar...
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+\pgf@transformcm ...f@pt@y \global \pgf@x =\pgf@x 
+                                                  \global \pgf@y =\pgf@y \xd...
+l.9327 ...ft] {\large Applications of statistics};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<argument> \pgf@x 
+                  
+l.9327 ...ft] {\large Applications of statistics};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<argument> \pgf@x 
+                  
+l.9327 ...ft] {\large Applications of statistics};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@x 
+                       
+l.9327 ...ft] {\large Applications of statistics};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.9329 ...ck,fill=black!40](579.4300000000001, -3)
+                                                   rectangle (585.2800000000...
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.9329 ..., -3) rectangle (585.2800000000001,-5.6)
+                                                  ;
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.9330 \draw(579.4300000000001, -3)
+                                    node[anchor=north west,align=left] {Appl...
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+\pgf@transformcm ...f@pt@y \global \pgf@x =\pgf@x 
+                                                  \global \pgf@y =\pgf@y \xd...
+l.9330 ...\ sciences and\\ financial mathematics};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<argument> \pgf@x 
+                  
+l.9330 ...\ sciences and\\ financial mathematics};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<argument> \pgf@x 
+                  
+l.9330 ...\ sciences and\\ financial mathematics};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@x 
+                       
+l.9330 ...\ sciences and\\ financial mathematics};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.9332 ...ck,fill=black!40](585.3800000000001, -3)
+                                                   rectangle (589.2300000000...
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.9332 ..., -3) rectangle (589.2300000000001,-5.1)
+                                                  ;
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.9333 \draw(585.3800000000001, -3)
+                                    node[anchor=north west,align=left] {Appl...
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+\pgf@transformcm ...f@pt@y \global \pgf@x =\pgf@x 
+                                                  \global \pgf@y =\pgf@y \xd...
+l.9333 ...ons\\  of\\ statistics to\\ psychology};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<argument> \pgf@x 
+                  
+l.9333 ...ons\\  of\\ statistics to\\ psychology};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<argument> \pgf@x 
+                  
+l.9333 ...ons\\  of\\ statistics to\\ psychology};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@x 
+                       
+l.9333 ...ons\\  of\\ statistics to\\ psychology};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.9335 ...,fill=black!40](579.4300000000001, -5.7)
+                                                   rectangle (584.2800000000...
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.9335 ...-5.7) rectangle (584.2800000000001,-8.3)
+                                                  ;
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.9336 \draw(579.4300000000001, -5.7)
+                                      node[anchor=north west,align=left] {Ap...
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+\pgf@transformcm ...f@pt@y \global \pgf@x =\pgf@x 
+                                                  \global \pgf@y =\pgf@y \xd...
+l.9336 ...nd\\ medical sciences;\\ meta analysis};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<argument> \pgf@x 
+                  
+l.9336 ...nd\\ medical sciences;\\ meta analysis};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<argument> \pgf@x 
+                  
+l.9336 ...nd\\ medical sciences;\\ meta analysis};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@x 
+                       
+l.9336 ...nd\\ medical sciences;\\ meta analysis};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.9338 ...,fill=black!40](584.3800000000001, -5.7)
+                                                   rectangle (589.2300000000...
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.9338 ...-5.7) rectangle (589.2300000000001,-8.3)
+                                                  ;
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.9339 \draw(584.3800000000001, -5.7)
+                                      node[anchor=north west,align=left] {Ap...
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+\pgf@transformcm ...f@pt@y \global \pgf@x =\pgf@x 
+                                                  \global \pgf@y =\pgf@y \xd...
+l.9339 ...o\\ environmental and\\ related topics};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<argument> \pgf@x 
+                  
+l.9339 ...o\\ environmental and\\ related topics};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<argument> \pgf@x 
+                  
+l.9339 ...o\\ environmental and\\ related topics};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@x 
+                       
+l.9339 ...o\\ environmental and\\ related topics};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.9341 ...,fill=black!40](579.4300000000001, -8.4)
+                                                   rectangle (583.7800000000...
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.9341 ...8.4) rectangle (583.7800000000001,-10.5)
+                                                  ;
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.9342 \draw(579.4300000000001, -8.4)
+                                      node[anchor=north west,align=left] {Ap...
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+\pgf@transformcm ...f@pt@y \global \pgf@x =\pgf@x 
+                                                  \global \pgf@y =\pgf@y \xd...
+l.9342 ... of statistics\\  to\\ social sciences};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<argument> \pgf@x 
+                  
+l.9342 ... of statistics\\  to\\ social sciences};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<argument> \pgf@x 
+                  
+l.9342 ... of statistics\\  to\\ social sciences};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@x 
+                       
+l.9342 ... of statistics\\  to\\ social sciences};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.9344 ...,fill=black!40](583.8800000000001, -8.4)
+                                                   rectangle (587.9800000000...
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.9344 ...8.4) rectangle (587.9800000000001,-11.0)
+                                                  ;
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.9345 \draw(583.8800000000001, -8.4)
+                                      node[anchor=north west,align=left] {Ap...
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+\pgf@transformcm ...f@pt@y \global \pgf@x =\pgf@x 
+                                                  \global \pgf@y =\pgf@y \xd...
+l.9345 ...ering\\ and industry;\\ control charts};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<argument> \pgf@x 
+                  
+l.9345 ...ering\\ and industry;\\ control charts};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<argument> \pgf@x 
+                  
+l.9345 ...ering\\ and industry;\\ control charts};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@x 
+                       
+l.9345 ...ering\\ and industry;\\ control charts};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.9347 ...(579.4300000000001, -11.100000000000001)
+                                                   rectangle (583.0300000000...
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.9347 ... (583.0300000000001,-13.200000000000001)
+                                                  ;
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.9348 ...(579.4300000000001, -11.100000000000001)
+                                                   node[anchor=north west,al...
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+\pgf@transformcm ...f@pt@y \global \pgf@x =\pgf@x 
+                                                  \global \pgf@y =\pgf@y \xd...
+l.9348 ...ions\\  of\\ statistics\\ to economics};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<argument> \pgf@x 
+                  
+l.9348 ...ions\\  of\\ statistics\\ to economics};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<argument> \pgf@x 
+                  
+l.9348 ...ions\\  of\\ statistics\\ to economics};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@x 
+                       
+l.9348 ...ions\\  of\\ statistics\\ to economics};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.9350 ...(583.1300000000001, -11.100000000000001)
+                                                   rectangle (586.7300000000...
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.9350 ... (586.7300000000001,-13.200000000000001)
+                                                  ;
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.9351 ...(583.1300000000001, -11.100000000000001)
+                                                   node[anchor=north west,al...
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+\pgf@transformcm ...f@pt@y \global \pgf@x =\pgf@x 
+                                                  \global \pgf@y =\pgf@y \xd...
+l.9351 ...ations\\  of\\ statistics\\ to physics};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<argument> \pgf@x 
+                  
+l.9351 ...ations\\  of\\ statistics\\ to physics};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<argument> \pgf@x 
+                  
+l.9351 ...ations\\  of\\ statistics\\ to physics};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@x 
+                       
+l.9351 ...ations\\  of\\ statistics\\ to physics};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.9353 ...fill=black!30](578.4300000000001, -13.4)
+                                                   rectangle (588.83,-24.200...
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.9353 ...) rectangle (588.83,-24.200000000000003)
+                                                  ;
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.9354 \draw(578.4300000000001, -13.4)
+                                       node[anchor=north west,align=left] {\...
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+\pgf@transformcm ...f@pt@y \global \pgf@x =\pgf@x 
+                                                  \global \pgf@y =\pgf@y \xd...
+l.9354 ...t] {\large Statistical decision theory};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<argument> \pgf@x 
+                  
+l.9354 ...t] {\large Statistical decision theory};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<argument> \pgf@x 
+                  
+l.9354 ...t] {\large Statistical decision theory};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@x 
+                       
+l.9354 ...t] {\large Statistical decision theory};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.9356 ...fill=black!40](579.4300000000001, -14.4)
+                                                   rectangle (584.2800000000...
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.9356 ...4.4) rectangle (584.2800000000001,-16.5)
+                                                  ;
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.9357 \draw(579.4300000000001, -14.4)
+                                       node[anchor=north west,align=left] {G...
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+\pgf@transformcm ...f@pt@y \global \pgf@x =\pgf@x 
+                                                  \global \pgf@y =\pgf@y \xd...
+l.9357 ...ons in\\ statistical\\ decision theory};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<argument> \pgf@x 
+                  
+l.9357 ...ons in\\ statistical\\ decision theory};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<argument> \pgf@x 
+                  
+l.9357 ...ons in\\ statistical\\ decision theory};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@x 
+                       
+l.9357 ...ons in\\ statistical\\ decision theory};
+                                                  
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.9359 ...fill=black!40](584.3800000000001, -14.4)
+                                                   rectangle (588.7300000000...
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.9359 ...4.4) rectangle (588.7300000000001,-16.5)
+                                                  ;
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.9360 \draw(584.3800000000001, -14.4)
+                                       node[anchor=north west,align=left] {C...
+(That makes 100 errors; please try again.) 
 Here is how much of TeX's memory you used:
- 34890 strings out of 492912
- 882152 string characters out of 6134894
- 3502036 words of memory out of 5000000
- 38523 multiletter control sequences out of 15000+600000
+ 35299 strings out of 492912
+ 892491 string characters out of 6134894
+ 4621762 words of memory out of 5000000
+ 38935 multiletter control sequences out of 15000+600000
  540732 words of font info for 79 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 69i,6n,119p,725b,636s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 69i,6n,119p,725b,628s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on math.pdf (1 page).
+No pages of output.
